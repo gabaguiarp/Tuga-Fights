@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: "Localization-String-Tables-Portugu\xEAs"
+  m_EditorClassIdentifier: 
+  m_GroupName: "Localization-String-Tables-Portugu\xEAs"
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 0e4d74f843b330e489ea0f07da6a59e7
+  m_SerializeEntries:
+  - m_GUID: 79880604ba344ca47ac6c2b8a831a446
+    m_Address: Menus_pt-PT
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-PT
+    - Preload
+  - m_GUID: 7a2ab5699be3a8a4daa57dac4fe1d36d
+    m_Address: Teams_pt-PT
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-PT
+    - Preload
+  - m_GUID: 292691c55cda1e64b9d18d6cb74d1a4a
+    m_Address: Popups_pt-PT
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-PT
+    - Preload
+  - m_GUID: 34f76cf1bd28a6a4397c3dee4bf7a4e3
+    m_Address: Gameplay_pt-PT
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-PT
+    - Preload
+  - m_GUID: 085375dfda6abcf4e9df2cf1327cf176
+    m_Address: Quests_pt-PT
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-PT
+    - Preload
+  - m_GUID: 82ba2809bbb0c574bbd4181d8ae0f376
+    m_Address: General_pt-PT
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-PT
+    - Preload
+  - m_GUID: 91caecde93d682042a393540e6828427
+    m_Address: Tutorial_pt-PT
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-PT
+    - Preload
+  - m_GUID: 2a6f318fa29f70e47a0e769f984550d4
+    m_Address: Mobile Notifications_pt-PT
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-PT
+    - Preload
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 8f8633f2c1d1d254ebb5667c07730ab5, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: ad7f69d0683e1b6498376b29bf066f38, type: 2}
+    - {fileID: 11400000, guid: 83b71b28bbacb374da383b4d82ba2251, type: 2}

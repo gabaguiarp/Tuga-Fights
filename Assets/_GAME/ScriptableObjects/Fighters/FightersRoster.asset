@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e709c179a20162e48b010865c0976d4b, type: 3}
+  m_Name: FightersRoster
+  m_EditorClassIdentifier: 
+  _teams:
+  - {fileID: 11400000, guid: 7642f3cb3ffe8d740907747a2b199b8c, type: 2}
+  - {fileID: 11400000, guid: 27d753cbe1cf9fa488ad76e2d39ddcf2, type: 2}
+  _fighters:
+  - {fileID: 11400000, guid: 2b8511d86323f0845a6b4e7ee848d13d, type: 2}
+  - {fileID: 11400000, guid: c00c1a95fe6a29742b296cf03854e006, type: 2}
+  - {fileID: 11400000, guid: 02610049b71f6834f87bf6f55b1da0cc, type: 2}
+  - {fileID: 11400000, guid: ab8d3459aa4a20742aa90e36f42f4796, type: 2}
+  - {fileID: 11400000, guid: d6d84f9a68ef9b3429f8542d1691a8f4, type: 2}
+  - {fileID: 11400000, guid: 0aacbd076106e204aad39e37a2adbdd8, type: 2}
+  - {fileID: 11400000, guid: 25e00bbce7785954bbf27bdcda467125, type: 2}
+  - {fileID: 11400000, guid: 25b08889965177f43927e971c65edc4b, type: 2}
+  - {fileID: 11400000, guid: 872041015bc55dc4d9f55402cefcba16, type: 2}
+  - {fileID: 11400000, guid: e47847eaa20967d4393b9605b7c24375, type: 2}
+  - {fileID: 11400000, guid: 332723ff6584d6249883f7f4645b98e0, type: 2}
+  - {fileID: 11400000, guid: 91e8e40c4fb5b3043a939b230bd8f58b, type: 2}
+  - {fileID: 11400000, guid: 4759706fdf538fe4fafce9bd8d1699d0, type: 2}
+  - {fileID: 11400000, guid: 6a407ba1fffdbd645b8b7a8e68d84017, type: 2}
+  - {fileID: 11400000, guid: f4f91e9111dd1e64b908aefa9f5b1a24, type: 2}
+  - {fileID: 11400000, guid: a7c7c4bdeeb45fc4192e4786429beb0b, type: 2}
+  _bonusFighters:
+  - <ID>k__BackingField: 0
+    _fighters:
+    - {fileID: 11400000, guid: 640d8ac07c0e55a4a91b5bd73e31dd6e, type: 2}
+    - {fileID: 11400000, guid: ecc3cae28842ad54caf7ed9396684120, type: 2}

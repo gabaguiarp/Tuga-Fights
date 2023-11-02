@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Menus_pt-PT
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt-PT
+  m_SharedData: {fileID: 11400000, guid: f790506eb5e24e841b2aca0d7260eb30, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 0
+  m_TableData:
+  - m_Id: 8597496887554048
+    m_Localized: Batalha
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8597550331375616
+    m_Localized: Modo Livre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8599526582562816
+    m_Localized: "Op\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8599573248389120
+    m_Localized: Sair do Jogo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8599668161294336
+    m_Localized: Mudar Equipa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8599713984065536
+    m_Localized: Lutar!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10029831361179648
+    m_Localized: Idioma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10030636009041920
+    m_Localized: "M\xFAsica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10030674068156416
+    m_Localized: Efeitos Sonoros
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10030725200916480
+    m_Localized: "Resolu\xE7\xE3o de Ecr\xE3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10030787289198592
+    m_Localized: "Ecr\xE3 Inteiro"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10093553123373056
+    m_Localized: Continuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10093609301880832
+    m_Localized: Desistir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20289269833707520
+    m_Localized: "Instru\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20303046016806912
+    m_Localized: "Escolhe uma equipa e enfrenta o advers\xE1rio de cada um dos lutadores."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20303144868163584
+    m_Localized: "Escolhe um lutador e enfrenta um advers\xE1rio aleat\xF3rio da
+      equipa oposta."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25266266590720000
+    m_Localized: Pausa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25273903571054592
+    m_Localized: "Cr\xE9ditos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25598469799456768
+    m_Localized: Escolhe a Tua Equipa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25600166928101376
+    m_Localized: Escolhe um Lutador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35832643915395072
+    m_Localized: "Oscila\xE7\xE3o da C\xE2mara"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 102448165653884928
+    m_Localized: Conquistas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 102798833824608256
+    m_Localized: "Pol\xEDtica de Privacidade"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 102798898584662016
+    m_Localized: Diz Algo
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 0
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00b0b088c1932600

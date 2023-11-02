@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 327b96cf71ed1f84286caef2b8678c9b, type: 3}
+  m_Name: FighterBaiao_profile
+  m_EditorClassIdentifier: 
+  _name: "Jo\xE3o Bai\xE3o"
+  _modelLabel: Baiao
+  _team: 0
+  _winStat: 6
+  _configuration: {fileID: 11400000, guid: 92b5b68312e34f44e88089cbd8cde025, type: 2}
+  _avatar: {fileID: 21300000, guid: b8debdd7f14c28a4d98cbcf17e8f427f, type: 3}
+  _thumbnail: {fileID: 21300000, guid: 072422589e5c50b419866633286b08bc, type: 3}

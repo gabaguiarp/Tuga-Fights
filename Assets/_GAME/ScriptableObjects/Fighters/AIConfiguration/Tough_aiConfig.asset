@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8df8ea7d11238e54b9cf192db7da34a2, type: 3}
+  m_Name: Tough_aiConfig
+  m_EditorClassIdentifier: 
+  PrewarmTime: 0.2
+  AlertStateDecisionFrequency: 0.1
+  MaxIdleTime: 0.2
+  MoveProbability: 1
+  MinChainAttackDelay: 0.01
+  MaxChainAttackDelay: 0.1
+  MinConsecutiveAttacks: 2
+  MaxConsecutiveAttacks: 4
+  MinAttackInterval: 0.2
+  MaxAttackInterval: 0.4
+  AttackChainCooldownTime: 0.5
+  StepBackProbability: 2
+  LowerAttackProbability: 1
+  DefenseProbability: 5
+  BlockAttackProbability: 1
+  HostileThreshold: 2

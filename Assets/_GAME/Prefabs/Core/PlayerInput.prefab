@@ -1,0 +1,353 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6183528034283750079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6183528034283750064}
+  - component: {fileID: 3575524312222544703}
+  - component: {fileID: 6183528034283750066}
+  - component: {fileID: 6183528034283750065}
+  - component: {fileID: 9101938161987729025}
+  - component: {fileID: 5743649265582707672}
+  m_Layer: 0
+  m_Name: PlayerInput
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6183528034283750064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6183528034283750079}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3575524312222544703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6183528034283750079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adbd158e79bd724896eba111d2bf3d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _input: {fileID: 6183528034283750066}
+  _inputReader: {fileID: 6183528034283750065}
+  _eventSystem: {fileID: 9101938161987729025}
+--- !u!114 &6183528034283750066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6183528034283750079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: a865d2d70f29dfb4788d8355eb5be963, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 5743649265582707672}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3575524312222544703}
+        m_TargetAssemblyTypeName: InputEventsHandler, Assembly-CSharp
+        m_MethodName: HandleDeviceLost
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3575524312222544703}
+        m_TargetAssemblyTypeName: InputEventsHandler, Assembly-CSharp
+        m_MethodName: HandleDeviceRegained
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3575524312222544703}
+        m_TargetAssemblyTypeName: InputEventsHandler, Assembly-CSharp
+        m_MethodName: HandleControlsChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6183528034283750065}
+        m_TargetAssemblyTypeName: InputReader, Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 18772eac-14aa-4a78-9488-3f99e9dca756
+    m_ActionName: Gameplay/Move[/Keyboard/a,/Keyboard/d,/DualShock4GamepadHID/leftStick/left,/DualShock4GamepadHID/leftStick/right,/DualShock4GamepadHID/dpad/left,/DualShock4GamepadHID/dpad/right]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6183528034283750065}
+        m_TargetAssemblyTypeName: InputReader, Assembly-CSharp
+        m_MethodName: Punch
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 42ce5fec-bdf3-4dde-8c1f-0ad116afb717
+    m_ActionName: Gameplay/Punch[/Keyboard/j,/Mouse/leftButton,/DualShock4GamepadHID/buttonWest]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6183528034283750065}
+        m_TargetAssemblyTypeName: InputReader, Assembly-CSharp
+        m_MethodName: Kick
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: b6e618b0-2b94-4c92-b49c-b477ce483b2e
+    m_ActionName: Gameplay/Kick[/Keyboard/l,/Mouse/rightButton,/DualShock4GamepadHID/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6183528034283750065}
+        m_TargetAssemblyTypeName: InputReader, Assembly-CSharp
+        m_MethodName: Dodge
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: c507302f-f595-4fc5-ab83-05a5e1b404ae
+    m_ActionName: Gameplay/Dodge[/Keyboard/s,/DualShock4GamepadHID/buttonEast]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6183528034283750065}
+        m_TargetAssemblyTypeName: InputReader, Assembly-CSharp
+        m_MethodName: Block
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 8d8dd128-2e32-4721-89c7-337923f17177
+    m_ActionName: Gameplay/Block[/Keyboard/w,/DualShock4GamepadHID/buttonNorth]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e19ed38d-d6c1-4ca9-9b6b-ade732556d10
+    m_ActionName: UI/Navigate[/DualShock4GamepadHID/leftStick/up,/DualShock4GamepadHID/rightStick/up,/DualShock4GamepadHID/leftStick/down,/DualShock4GamepadHID/rightStick/down,/DualShock4GamepadHID/leftStick/left,/DualShock4GamepadHID/rightStick/left,/DualShock4GamepadHID/leftStick/right,/DualShock4GamepadHID/rightStick/right,/DualShock4GamepadHID/dpad,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 70f08a63-43ef-432a-bfe1-80fe3b948337
+    m_ActionName: UI/Submit[/Keyboard/enter,/DualShock4GamepadHID/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 78cb6cc1-d50b-45d6-84b0-ea972fd32d86
+    m_ActionName: UI/Cancel[/Keyboard/escape,/DualShock4GamepadHID/buttonEast]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7ef5b683-e019-430b-b39d-3b0379a01b3a
+    m_ActionName: UI/Point[/Mouse/position,/Pen/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 60e4d74c-a050-440f-a937-7cbed4cc435a
+    m_ActionName: UI/Click[/Mouse/leftButton,/Pen/tip]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4f0eb079-fcc7-494e-92ac-1b8ad7e5f47f
+    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c4562d4a-34e1-4a54-bb25-93d0cad73f91
+    m_ActionName: PlayerJoining/Join[/Keyboard/space,/DualShock4GamepadHID/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6183528034283750065}
+        m_TargetAssemblyTypeName: MemeFight.Input.PlayerInputReader, Assembly-CSharp
+        m_MethodName: SwitchTeam
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 65dbdfa8-f4eb-4a32-86e8-c71e968e2ed9
+    m_ActionName: Menus/SwitchTeam[/Keyboard/tab,/DualShock4GamepadHID/buttonWest]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6183528034283750065}
+        m_TargetAssemblyTypeName: MemeFight.Input.PlayerInputReader, Assembly-CSharp
+        m_MethodName: Pause
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: a3df8673-c6a7-456b-913d-20db1625afaf
+    m_ActionName: Gameplay/Pause[/Keyboard/escape,/DualShock4GamepadHID/start]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6183528034283750065}
+        m_TargetAssemblyTypeName: MemeFight.Input.PlayerInputReader, Assembly-CSharp
+        m_MethodName: Pause
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 09e28fef-1e38-4875-aab8-7e2c81c76c57
+    m_ActionName: Menus/Pause[/Keyboard/escape,/DualShock4GamepadHID/start]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6183528034283750065}
+        m_TargetAssemblyTypeName: MemeFight.Input.PlayerInputReader, Assembly-CSharp
+        m_MethodName: Back
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 5e43ae1c-df23-4ed1-86b2-aa7992c93e95
+    m_ActionName: Menus/Back[/Keyboard/escape,/Mouse/backButton,/DualShock4GamepadHID/buttonEast]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Gameplay
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &6183528034283750065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6183528034283750079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1d8fdc8bbe78f4b94574cf4c8264c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inputController: {fileID: 3575524312222544703}
+  gameplayChannel: {fileID: 0}
+  menusChannel: {fileID: 11400000, guid: 345ce69e38180e044b49409da9f3750d, type: 2}
+  _isPointerOverUI: 0
+--- !u!114 &9101938161987729025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6183528034283750079}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b16c6f78230fa4964a222622d8aae332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+  m_PlayerRoot: {fileID: 0}
+--- !u!114 &5743649265582707672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6183528034283750079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: a865d2d70f29dfb4788d8355eb5be963, type: 3}
+  m_PointAction: {fileID: 2584486049986827049, guid: a865d2d70f29dfb4788d8355eb5be963, type: 3}
+  m_MoveAction: {fileID: -1463556268205729325, guid: a865d2d70f29dfb4788d8355eb5be963, type: 3}
+  m_SubmitAction: {fileID: 3214941715007245648, guid: a865d2d70f29dfb4788d8355eb5be963, type: 3}
+  m_CancelAction: {fileID: 8110780240976326201, guid: a865d2d70f29dfb4788d8355eb5be963, type: 3}
+  m_LeftClickAction: {fileID: -8588924316705100887, guid: a865d2d70f29dfb4788d8355eb5be963, type: 3}
+  m_MiddleClickAction: {fileID: 0}
+  m_RightClickAction: {fileID: 0}
+  m_ScrollWheelAction: {fileID: -5414182051091249192, guid: a865d2d70f29dfb4788d8355eb5be963, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 0}
+  m_TrackedDeviceOrientationAction: {fileID: 0}
+  m_DeselectOnBackgroundClick: 0
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0

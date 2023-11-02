@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 327b96cf71ed1f84286caef2b8678c9b, type: 3}
+  m_Name: FighterTeresaGuilherme_profile
+  m_EditorClassIdentifier: 
+  _name: Teresa Guilherme
+  _modelLabel: TeresaGuilherme
+  _team: 0
+  _winStat: 18
+  _configuration: {fileID: 11400000, guid: da930ad77f41ff6469c65e85ee428db4, type: 2}
+  _avatar: {fileID: 21300000, guid: 96eaba4ffb4a46e42b4d36e19c004b3c, type: 3}
+  _thumbnail: {fileID: 21300000, guid: 0aa11853bdbf3624287d57fd374f0c90, type: 3}

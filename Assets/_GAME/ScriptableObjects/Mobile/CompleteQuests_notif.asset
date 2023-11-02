@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13afb9505186b78448d70ebe24ecb8a0, type: 3}
+  m_Name: CompleteQuests_notif
+  m_EditorClassIdentifier: 
+  _description: Sent every time the player quits the game, in case they haven't finished
+    all quests.
+  _id: 0
+  _name: Complete Quests
+  _title:
+    m_TableReference:
+      m_TableCollectionName: GUID:dfb130bb20bf8624b89f281ec48abc01
+    m_TableEntryReference:
+      m_KeyId: 289537073917952
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _text:
+    m_TableReference:
+      m_TableCollectionName: GUID:dfb130bb20bf8624b89f281ec48abc01
+    m_TableEntryReference:
+      m_KeyId: 289652140453888
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <FireTime>k__BackingField: 3
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Popups Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Popups
+  m_TableCollectionNameGuidString: 5075cd9103a49c34c9fdd35e819ef4a7
+  m_Entries:
+  - m_Id: 154500378624
+    m_Key: quitConfirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5573335625728
+    m_Key: matchOverPopup
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9597606735872
+    m_Key: yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9646596206592
+    m_Key: no
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9675083919360
+    m_Key: replay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10029951397888
+    m_Key: quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77345869500821504
+    m_Key: specialRewardUnlocked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77347032010895360
+    m_Key: letsFight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80476004915654656
+    m_Key: attemptsLeft
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86723235448664064
+    m_Key: campaignWinnerPopup
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86724814201466880
+    m_Key: ok
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 0
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1652181378954

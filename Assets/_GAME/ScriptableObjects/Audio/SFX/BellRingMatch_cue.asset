@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01c722313bfb0e24fafc527edb71452d, type: 3}
+  m_Name: BellRingMatch_cue
+  m_EditorClassIdentifier: 
+  _description: 
+  _clip: {fileID: 8300000, guid: fdf756fefd8ee2c40aac1985d1e4e9b8, type: 3}
+  _loop: 0
+  _volume: 1

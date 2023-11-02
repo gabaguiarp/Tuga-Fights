@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "789399507713",
+    "project_id": "tugafights",
+    "storage_bucket": "tugafights.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789399507713:android:42babf85713905df148100",
+        "android_client_info": {
+          "package_name": "com.playhousegames.tugafights"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789399507713-o1csjo6n1u89sjk0n15l26momii9degb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq_70o6Kjt-6zOz9fEZQ3L0u-lmvRL47o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789399507713-o1csjo6n1u89sjk0n15l26momii9degb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

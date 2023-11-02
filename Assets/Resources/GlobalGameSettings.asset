@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d01e17727d4d2e42a09eb2b8b673205, type: 3}
+  m_Name: GlobalGameSettings
+  m_EditorClassIdentifier: 
+  _targetFrameRate: 60
+  _overrideForAllPlatforms: 1
+  _fpsOptions:
+    standalone: 60
+    android: 60
+    iOS: 60
+  _loadData: 1
+  _saveData: 1
+  _analyticsEnabled: 1
+  _crashlyticsEnabled: 1
+  _contactURL: mailto:playatplayhouse@gmail.com
+  _privacyPolicyURLs:
+    <Portuguese>k__BackingField: https://sites.google.com/view/tugafights/politica-de-privacidade
+    <English>k__BackingField: https://sites.google.com/view/tugafights/privacy-policy

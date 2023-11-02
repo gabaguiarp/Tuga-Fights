@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Tutorial_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 2132479ae0fa9b649beef5b4ad9511d9, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 24699252736
+    m_Localized: "In Tuga Fights there are two game modes: Battle and Free Fight.\nIn
+      Battle Mode you choose a team and face off against each of the fighters\u2019
+      opponents.\nIn Free Fight Mode you can pick any fighter and will face a random
+      opponent from the opposite team."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66713595904
+    m_Localized: "The fighters\u2019 interface is composed of three elements. The
+      stamina meter (yellow bar) shows their state; when it runs out, it means the
+      fighter has been defeated and the opponent will be declared as the current
+      round winner. The defence power meter (green bar) shows how efficient the fighter's
+      blocking can be against potential punches. The light panels, when turned on,
+      indicate the number of rounds won by the corresponding fighter during the current
+      match."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 105527685120
+    m_Localized: The game screen presents you with the necessary buttons to control
+      your fighter. On the left side, you find the directional arrows, and on the
+      right side, the combat tactics.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3543082074157056
+    m_Localized: 'There are two groups of combat tactics: offensive and defensive.
+
+      Among
+      the offensive tactics you can use punches or kicks. Punches are only effective
+      if your opponent is not blocking attacks, and they have a short recharging
+      time.
+
+      Kicks deal more damage; however, they take longer to recharge.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3543123178336256
+    m_Localized: To defend yourself from your opponent's attacks you can choose either
+      to block or dodge. Hold the blocking button to block attacks. If you are hit
+      by punches while blocking you won't suffer any damage, but it will cause you
+      to lose some defence power. When your defence power runs out, blocking will
+      not be effective anymore. Dodging, on the other hand, does not require any
+      defence power, but is a very short and quick move.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3543191633571840
+    m_Localized: If your defence power completely runs out, you will need to gain
+      it back in order to make blocking effective again. You can win some defence
+      power for every three seconds without suffering any damage, or by hitting your
+      opponent three times consecutively.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3543249217171456
+    m_Localized: 'Each match is composed of two rounds. The fighter that gathers
+      two victories will be declared as winner.
+
+      If, by the end of the second
+      round, both fighters are tied, an extra round will start, to determine the
+      winner.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3543333388464128
+    m_Localized: Keep an eye on the challenges panel so you can unlock a special
+      reward. The top bar shows your progress. Once every challenge is complete,
+      you can finally unravel one of the biggest Portuguese TV mysteries!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

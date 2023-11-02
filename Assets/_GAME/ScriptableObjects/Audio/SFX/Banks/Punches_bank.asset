@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab5708ebf794ca741adb4d2a02dd8943, type: 3}
+  m_Name: Punches_bank
+  m_EditorClassIdentifier: 
+  _description: 
+  items:
+  - {fileID: 11400000, guid: 6cfefe07e05ec414d9c4729b14826156, type: 2}
+  - {fileID: 11400000, guid: 6c9da075bf5cdf544a1ff3a7348764bc, type: 2}
+  - {fileID: 11400000, guid: 76bec17ed08aeb04996e330c6edc05db, type: 2}

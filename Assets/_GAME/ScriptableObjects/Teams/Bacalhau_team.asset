@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22cdbb09185462347ac7879fa798c70e, type: 3}
+  m_Name: Bacalhau_team
+  m_EditorClassIdentifier: 
+  _label: 1
+  _nameString:
+    m_TableReference:
+      m_TableCollectionName: GUID:165afe8959e423143af56e643f9878d4
+    m_TableEntryReference:
+      m_KeyId: 122120351744
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 1

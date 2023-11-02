@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Tutorial_pt-PT
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt-PT
+  m_SharedData: {fileID: 11400000, guid: 2132479ae0fa9b649beef5b4ad9511d9, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 24699252736
+    m_Localized: "Em Tuga Fights existem dois modos de jogo: Batalha e Modo Livre.\nNo
+      Modo Batalha escolhes uma equipa e ter\xE1s de lutar contra o advers\xE1rio
+      de cada um dos lutadores.\nNo Modo Livre poder\xE1s escolher qualquer lutador
+      e ir\xE1s defrontar um advers\xE1rio aleat\xF3rio da equipa oposta."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66713595904
+    m_Localized: "A interface dos lutadores \xE9 composta por tr\xEAs elementos.
+      O medidor de energia (barra amarela) indica o seu estado; quando este esgotar,
+      significa que o lutador foi derrotado e o advers\xE1rio ser\xE1 declarado vencedor
+      da ronda atual. O medidor de poder de defesa (barra verde) indica qu\xE3o eficiente
+      o bloqueio do lutador pode ser contra eventuais socos. Os pain\xE9is luminosos,
+      quando ligados, indicam o n\xFAmero rondas vencidas por esse lutador durante
+      a partida atual."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 105527685120
+    m_Localized: "O ecr\xE3 do jogo d\xE1-te os bot\xF5es necess\xE1rios para controlares
+      o teu lutador. Do lado esquerdo encontras as setas de dire\xE7\xE3o, e do lado
+      direito as t\xE1ticas de combate."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3543082074157056
+    m_Localized: "Existem dois grupos de t\xE1ticas de combate: ofensivas e defensivas.\nEntre
+      as t\xE1ticas ofensivas poder\xE1s usar socos ou pontap\xE9s. Os socos s\xF3
+      s\xE3o eficientes se o teu advers\xE1rio n\xE3o estiver a bloquear ataques,
+      e t\xEAm um tempo de recarga curto.\nOs pontap\xE9s infligem maior dano, mas,
+      por sua vez, t\xEAm um tempo de recarga mais longo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3543123178336256
+    m_Localized: "Para te defenderes dos ataques do teu advers\xE1rio poder\xE1s
+      optar pelo bloqueio ou esquiva. Mant\xE9m premido o bot\xE3o de bloqueio para
+      bloquear ataques. Se fores atingido por socos enquanto est\xE1s a bloquear
+      n\xE3o ir\xE1s sofrer danos, mas ir\xE1s perder algum poder de defesa. Quando
+      o teu poder de defesa esgotar, o bloqueio deixar\xE1 de ser eficiente. J\xE1
+      a esquiva n\xE3o requer poder de defesa, mas trata-se de um movimento fugaz,
+      de curta dura\xE7\xE3o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3543191633571840
+    m_Localized: "Se o teu poder de defesa esgotar por completo, ter\xE1s de voltar
+      a ganh\xE1-lo para tornar o bloqueio novamente eficiente. Poder\xE1s ganhar
+      algum poder de defesa por cada tr\xEAs segundos consecutivos sem sofrer danos,
+      ou por atingires o teu advers\xE1rio com tr\xEAs ataques sucessivos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3543249217171456
+    m_Localized: "Cada partida \xE9 composta por duas rondas. O lutador que tiver
+      duas vit\xF3rias ser\xE1 declarado vencedor.\nSe, no final da segunda ronda,
+      as vit\xF3rias estiverem empatadas, iniciar-se-\xE1 uma ronda extra para determinar
+      o vencedor."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3543333388464128
+    m_Localized: "Fica de olho no painel de desafios para poderes desbloquear uma
+      recompensa especial. A barra superior mostra o teu progresso. Assim que todos
+      os desafios forem conclu\xEDdos, poder\xE1s finalmente desvendar um dos maiores
+      mist\xE9rios da TV portuguesa!"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

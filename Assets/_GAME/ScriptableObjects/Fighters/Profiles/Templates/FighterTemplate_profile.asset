@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 327b96cf71ed1f84286caef2b8678c9b, type: 3}
+  m_Name: FighterTemplate_profile
+  m_EditorClassIdentifier: 
+  _name: Dummy
+  _modelLabel: Gisela
+  _team: 1
+  _winStat: 10
+  _configuration: {fileID: 11400000, guid: 1be0aebc214424f47a49c4c7ba147ca4, type: 2}
+  _avatar: {fileID: 21300000, guid: 79b70db52a0c60647bfcb79725bc8f81, type: 3}
+  _thumbnail: {fileID: 21300000, guid: b33659978d74c4145a69c2525961e083, type: 3}

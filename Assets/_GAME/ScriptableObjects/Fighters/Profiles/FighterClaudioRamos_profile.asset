@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 327b96cf71ed1f84286caef2b8678c9b, type: 3}
+  m_Name: FighterClaudioRamos_profile
+  m_EditorClassIdentifier: 
+  _name: "Cl\xE1udio Ramos"
+  _modelLabel: ClaudioRamos
+  _team: 0
+  _winStat: 9
+  _configuration: {fileID: 11400000, guid: 92b5b68312e34f44e88089cbd8cde025, type: 2}
+  _avatar: {fileID: 21300000, guid: b1146f22b4cd82743a066cf1e302d375, type: 3}
+  _thumbnail: {fileID: 21300000, guid: 8e5596366f575614a80f999016e3c9b4, type: 3}

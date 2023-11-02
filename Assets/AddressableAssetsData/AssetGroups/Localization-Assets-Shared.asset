@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-Shared
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-Shared
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 19843734edcf3f44f840773ceb60d342
+  m_SerializeEntries:
+  - m_GUID: f790506eb5e24e841b2aca0d7260eb30
+    m_Address: Assets/Localization/Tables/Menus Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: 165afe8959e423143af56e643f9878d4
+    m_Address: Assets/Localization/Tables/Teams Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: 5075cd9103a49c34c9fdd35e819ef4a7
+    m_Address: Assets/Localization/Tables/Popups Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: 48963e85f71404348b05d9c41c7fef55
+    m_Address: Assets/Localization/Tables/Gameplay Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: ac5b56b171c55ca468427e64343a476d
+    m_Address: Assets/Localization/Tables/Quests Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: 663e9276f4e683343af37d9b76510986
+    m_Address: Assets/Localization/Tables/General Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: 2132479ae0fa9b649beef5b4ad9511d9
+    m_Address: Assets/Localization/Tables/Tutorial Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: d8acbaae96a706d42ab1bfa5db4e5a23
+    m_Address: Assets/Localization/Tables/Flags Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: dfb130bb20bf8624b89f281ec48abc01
+    m_Address: Assets/Localization/Tables/Mobile Notifications Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 8f8633f2c1d1d254ebb5667c07730ab5, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: ed9431f25d0a0c44797c4c5ade7e3161, type: 2}
+    - {fileID: 11400000, guid: a0f941de3f941134a9be59ff6b11f18b, type: 2}

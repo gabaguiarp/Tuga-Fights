@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab5708ebf794ca741adb4d2a02dd8943, type: 3}
+  m_Name: Steps_bank
+  m_EditorClassIdentifier: 
+  _description: 
+  items:
+  - {fileID: 11400000, guid: 7ddd9a27c9e50d842b32bd52d253c891, type: 2}
+  - {fileID: 11400000, guid: f93c0a3c63ebfc94592214f90fd5f0d5, type: 2}
+  - {fileID: 11400000, guid: 7361a5a580478d6469869577f17c4996, type: 2}
+  - {fileID: 11400000, guid: dc265a6e1819329409c6c70634aca24f, type: 2}
+  - {fileID: 11400000, guid: 61a9e071526faf34181a854ed9c738a3, type: 2}

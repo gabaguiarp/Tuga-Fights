@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-String-Tables-English
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-String-Tables-English
+  m_Data:
+    m_SerializedData: []
+  m_GUID: b57758e4f400277428097a6c6863462c
+  m_SerializeEntries:
+  - m_GUID: db933691df7ea834aa1e9981eeabcb0b
+    m_Address: Menus_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: 3a025c701d02fac4c92d145ed5701785
+    m_Address: Teams_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: a845e85a9362df042b7e82b93d73b768
+    m_Address: Popups_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: 46f502551168c7547b12ce2a92943c63
+    m_Address: Gameplay_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: d59115463d2ca0a4186fe576daeda2d6
+    m_Address: Quests_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: 9be2243039e0cd64f9991b8530c5dfba
+    m_Address: General_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: 78fb2f3c768df354b8b6bc0e9a741835
+    m_Address: Tutorial_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: d8269b0074dbfe04f99ee49f1e2b4a8d
+    m_Address: Mobile Notifications_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 8f8633f2c1d1d254ebb5667c07730ab5, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: ec3efe89b9eb0db459f3324f6613d8af, type: 2}
+    - {fileID: 11400000, guid: 389def77e684c2b48afd67001d78fc9c, type: 2}

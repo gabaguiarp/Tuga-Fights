@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c8a5c51b49bc6f409b3259b2e40d62f, type: 3}
+  m_Name: GiselaSandra_chat
+  m_EditorClassIdentifier: 
+  Messages:
+  - Sua marrana, vou-te partir essa boka toda.
+  - "Kem \xE9?"
+  - "\xC9 a Gisela sua palhassa."
+  - "Os palhasus v\xE3o ao circo."
+  - Levas um murro na tromba.

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9969982fe230648b70e9c00b870738, type: 3}
+  m_Name: FreeFightCustom_match
+  m_EditorClassIdentifier: 
+  _description: Contains the configuration for a custom Free Fight match. These values
+    should be set through a dedicated menu before starting the actual match.
+  _fighterOne: {fileID: 11400000, guid: 2b8511d86323f0845a6b4e7ee848d13d, type: 2}
+  _fighterTwo: {fileID: 11400000, guid: c00c1a95fe6a29742b296cf03854e006, type: 2}

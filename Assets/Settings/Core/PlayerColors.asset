@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4fb65eceab53e5458705fa2b4d1d94c, type: 3}
+  m_Name: PlayerColors
+  m_EditorClassIdentifier: 
+  _description: Contains the color references to represent each player selection
+    in the UI.
+  _playerOneColor: {r: 0.29803923, g: 0.29803923, b: 1, a: 1}
+  _playerTwoColor: {r: 1, g: 0, b: 0, a: 1}

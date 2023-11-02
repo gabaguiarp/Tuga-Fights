@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9969982fe230648b70e9c00b870738, type: 3}
+  m_Name: BatatinhaVsCompanhia_match
+  m_EditorClassIdentifier: 
+  _description: 
+  _fighterOne: {fileID: 11400000, guid: 640d8ac07c0e55a4a91b5bd73e31dd6e, type: 2}
+  _fighterTwo: {fileID: 11400000, guid: ecc3cae28842ad54caf7ed9396684120, type: 2}

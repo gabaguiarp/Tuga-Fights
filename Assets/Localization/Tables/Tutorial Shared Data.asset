@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Tutorial Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Tutorial
+  m_TableCollectionNameGuidString: 2132479ae0fa9b649beef5b4ad9511d9
+  m_Entries:
+  - m_Id: 24699252736
+    m_Key: tut01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66713595904
+    m_Key: tut02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 105527685120
+    m_Key: tut03_mobile
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3543082074157056
+    m_Key: tut04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3543123178336256
+    m_Key: tut05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3543191633571840
+    m_Key: tut06
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3543249217171456
+    m_Key: tut07
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3543333388464128
+    m_Key: tut08
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8755331093716795398
+  references:
+    version: 2
+    RefIds:
+    - rid: 8755331093716795398
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1670787495035

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Quests Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Quests
+  m_TableCollectionNameGuidString: ac5b56b171c55ca468427e64343a476d
+  m_Entries:
+  - m_Id: 22337859584
+    m_Key: questFreeFightWins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 227766480896
+    m_Key: questCampaignWinAzeite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 425557274624
+    m_Key: questCampaignWinBacalhau
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8755331065911181314
+  references:
+    version: 2
+    RefIds:
+    - rid: 8755331065911181314
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1670684243969

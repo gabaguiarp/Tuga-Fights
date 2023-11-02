@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: Quests
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: ac5b56b171c55ca468427e64343a476d, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: 085375dfda6abcf4e9df2cf1327cf176, type: 2}
+  - {fileID: 11400000, guid: d59115463d2ca0a4186fe576daeda2d6, type: 2}
+  m_Extensions: []
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds: []

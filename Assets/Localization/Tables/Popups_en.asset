@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Popups_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 5075cd9103a49c34c9fdd35e819ef4a7, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 8755331246905098245
+  m_TableData:
+  - m_Id: 154500378624
+    m_Localized: Are you sure you want to quit this match?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5573335625728
+    m_Localized: 'Match Over!
+
+      {remainingAttempts}'
+    m_Metadata:
+      m_Items:
+      - rid: 8755331246905098245
+  - m_Id: 9597606735872
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9646596206592
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9675083919360
+    m_Localized: Replay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10029951397888
+    m_Localized: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77345869500821504
+    m_Localized: 'All challenges complete!
+
+      With this, you have unlocked a
+      bonus pair of fighters.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77347032010895360
+    m_Localized: Let's Fight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80476004915654656
+    m_Localized: '{attempts:plural:{} attempt|{} attempts} remaining'
+    m_Metadata:
+      m_Items:
+      - rid: 8755331246905098245
+  - m_Id: 86723235448664064
+    m_Localized: '{winnerTeam} Team wins!'
+    m_Metadata:
+      m_Items:
+      - rid: 8755331246905098245
+  - m_Id: 86724814201466880
+    m_Localized: OK
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 8755331246905098245
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00b0b0a41105000000b0f00580e81d0100b0b0ba521a3401
