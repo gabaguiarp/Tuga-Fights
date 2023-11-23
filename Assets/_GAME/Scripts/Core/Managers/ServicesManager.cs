@@ -36,7 +36,7 @@ namespace MemeFight.Services
 
         public async Task InitializeServices()
         {
-            Debug.Log("[Serivces] Initializing services...");
+            Debug.Log("[Services] Initializing services...");
 
             await InitializeFirebase();
 #if UNITY_ANDROID

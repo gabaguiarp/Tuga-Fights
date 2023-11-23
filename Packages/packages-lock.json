@@ -7,36 +7,6 @@
       "dependencies": {},
       "hash": "b870d64b5704a764fd03aaccb11f2dbe652b1756"
     },
-    "com.google.external-dependency-manager": {
-      "version": "file:C:/Users/gabri/Downloads/com.google.external-dependency-manager-1.2.175.tgz",
-      "depth": 0,
-      "source": "local-tarball",
-      "dependencies": {}
-    },
-    "com.google.firebase.analytics": {
-      "version": "file:C:/Users/gabri/Downloads/com.google.firebase.analytics-10.3.0.tgz",
-      "depth": 0,
-      "source": "local-tarball",
-      "dependencies": {
-        "com.google.firebase.app": "10.3.0"
-      }
-    },
-    "com.google.firebase.app": {
-      "version": "file:C:/Users/gabri/Downloads/com.google.firebase.app-10.3.0.tgz",
-      "depth": 0,
-      "source": "local-tarball",
-      "dependencies": {
-        "com.google.external-dependency-manager": "1.2.175"
-      }
-    },
-    "com.google.firebase.crashlytics": {
-      "version": "file:C:/Users/gabri/Downloads/com.google.firebase.crashlytics-10.3.0.tgz",
-      "depth": 0,
-      "source": "local-tarball",
-      "dependencies": {
-        "com.google.firebase.app": "10.3.0"
-      }
-    },
     "com.unity.2d.animation": {
       "version": "9.0.4",
       "depth": 0,
@@ -131,7 +101,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.burst": {
-      "version": "1.8.9",
+      "version": "1.8.11",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -246,7 +216,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.recorder": {
-      "version": "4.0.1",
+      "version": "4.0.2",
       "depth": 0,
       "source": "registry",
       "dependencies": {
