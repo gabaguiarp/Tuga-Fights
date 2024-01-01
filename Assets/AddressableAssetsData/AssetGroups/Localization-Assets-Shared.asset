@@ -21,38 +21,47 @@ MonoBehaviour:
     m_Address: Assets/Localization/Tables/Menus Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 165afe8959e423143af56e643f9878d4
     m_Address: Assets/Localization/Tables/Teams Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5075cd9103a49c34c9fdd35e819ef4a7
     m_Address: Assets/Localization/Tables/Popups Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 48963e85f71404348b05d9c41c7fef55
     m_Address: Assets/Localization/Tables/Gameplay Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ac5b56b171c55ca468427e64343a476d
     m_Address: Assets/Localization/Tables/Quests Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 663e9276f4e683343af37d9b76510986
     m_Address: Assets/Localization/Tables/General Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2132479ae0fa9b649beef5b4ad9511d9
     m_Address: Assets/Localization/Tables/Tutorial Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d8acbaae96a706d42ab1bfa5db4e5a23
     m_Address: Assets/Localization/Tables/Flags Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: dfb130bb20bf8624b89f281ec48abc01
     m_Address: Assets/Localization/Tables/Mobile Notifications Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 8f8633f2c1d1d254ebb5667c07730ab5, type: 2}
   m_SchemaSet:
