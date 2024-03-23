@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: FighterHerman_profile
   m_EditorClassIdentifier: 
   _name: "Herman Jos\xE9"
-  _modelLabel: Toy
+  _modelLabel: Herman
   _team: 1
   _winStat: 19
-  _configuration: {fileID: 11400000, guid: da930ad77f41ff6469c65e85ee428db4, type: 2}
+  _configuration: {fileID: 11400000, guid: 92b5b68312e34f44e88089cbd8cde025, type: 2}
   _avatar: {fileID: 21300000, guid: 17dde08a60a2b7044b725689cf921619, type: 3}
   _thumbnail: {fileID: 21300000, guid: 8d206530d0b771d4fbf7f86857792332, type: 3}

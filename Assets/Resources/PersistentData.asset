@@ -30,24 +30,26 @@ MonoBehaviour:
     settings:
       music: 1
       sfx: 1
-      cameraNoise: 0
+      cameraNoise: 1
     stats:
     - ID: 0
       Value: 3
     - ID: 1
       Value: 2
     - ID: 2
-      Value: 11
+      Value: 14
     - ID: 3
-      Value: 42
+      Value: 45
     - ID: 10
-      Value: 1
+      Value: 3
     - ID: 18
       Value: 1
     - ID: 21
       Value: 1
+    - ID: 7
+      Value: 1
   _gameplayStream:
-    gameMode: 0
+    gameMode: 1
     currentCampaignMatchIndex: 0
     campaignAttemptsRemaining: 0
     questProgressPercentage: 1
@@ -59,3 +61,4 @@ MonoBehaviour:
     consecutiveLosses: 0
     latestRoundDuration: 0
     lastSelectedFighter: 
+    hasOpenedTutorial: 0

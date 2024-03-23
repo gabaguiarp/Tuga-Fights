@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FighterLiliCanecas_profile
   m_EditorClassIdentifier: 
   _name: "Lili Cane\xE7as"
-  _modelLabel: Agata
+  _modelLabel: LiliCanecas
   _team: 0
   _winStat: 4
   _configuration: {fileID: 11400000, guid: 1be0aebc214424f47a49c4c7ba147ca4, type: 2}
