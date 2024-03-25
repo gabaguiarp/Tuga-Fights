@@ -443,7 +443,7 @@ namespace MemeFight
 
                         // Last match complete
                         bool isBacalhauTeamSelected = _persistentData.SelectedTeam.Equals(Team.Bacalhau);
-                        StatID statID = isBacalhauTeamSelected ? StatID.BACALAHU_TEAM_WIN : StatID.AZEITE_TEAM_WIN;
+                        StatID statID = isBacalhauTeamSelected ? StatID.BACALHAU_TEAM_WIN : StatID.AZEITE_TEAM_WIN;
                         Stats.RegisterStat(statID, 1);
 
                         Achievement achievement = isBacalhauTeamSelected ? Achievement.CAMPAIGN_BACALHAU_WIN :

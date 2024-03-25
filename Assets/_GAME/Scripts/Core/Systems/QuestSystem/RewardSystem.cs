@@ -4,7 +4,8 @@ namespace MemeFight
 {
     public enum RewardID
     {
-        BONUS_FIGHTERS_BATATOON
+        BONUS_FIGHTERS_BATATOON,
+        BONUS_FIGHTERS_HERMAN_LILI
     }
 
     public class RewardSystem

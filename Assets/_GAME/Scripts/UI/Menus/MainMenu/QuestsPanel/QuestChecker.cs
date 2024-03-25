@@ -200,7 +200,7 @@ namespace MemeFight.Menus
         }
 
         #region External Callbacks
-        // Triggered externaly by the bonus match popup
+        // Called externaly by the bonus match popup
         public void StartBonusFightersMatch()
         {
             Debug.Log("Starting bonus match");
