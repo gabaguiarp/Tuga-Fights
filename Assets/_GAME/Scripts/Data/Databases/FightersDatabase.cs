@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using static MemeFight.FightersRosterSO;
 
 namespace MemeFight
 {
@@ -26,11 +27,11 @@ namespace MemeFight
             roster.Fighters.ForEach(f => RegisterFighter(f));
 
             // Register bonus fighters
-            foreach (FightersBundleID id in persistentData.FighterBundles)
+            foreach (var bundle in roster.BonusFighters)
             {
-                if (roster.ContainsBonusID(id))
+                if (persistentData.ContainsBundle(bundle.ID))
                 {
-                    var fighters = roster.GetBonusFighters(id);
+                    var fighters = roster.GetBonusFighters(bundle.ID);
                     fighters.ForEach(f => RegisterFighter(f));
                 }
             }
@@ -103,6 +104,7 @@ namespace MemeFight
 
     public enum FightersBundleID
     {
-        BATATOON
+        BATATOON,
+        HERMAN_LILI,
     }
 }

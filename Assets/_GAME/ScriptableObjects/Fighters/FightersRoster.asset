@@ -32,9 +32,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6a407ba1fffdbd645b8b7a8e68d84017, type: 2}
   - {fileID: 11400000, guid: f4f91e9111dd1e64b908aefa9f5b1a24, type: 2}
   - {fileID: 11400000, guid: a7c7c4bdeeb45fc4192e4786429beb0b, type: 2}
-  - {fileID: 11400000, guid: f4cf6c0b5c14d2e408811dcd1ff987b8, type: 2}
-  - {fileID: 11400000, guid: d607f5b7cd05df447b83b181b11263dc, type: 2}
   _bonusFighters:
+  - <ID>k__BackingField: 1
+    _fighters:
+    - {fileID: 11400000, guid: f4cf6c0b5c14d2e408811dcd1ff987b8, type: 2}
+    - {fileID: 11400000, guid: d607f5b7cd05df447b83b181b11263dc, type: 2}
   - <ID>k__BackingField: 0
     _fighters:
     - {fileID: 11400000, guid: 640d8ac07c0e55a4a91b5bd73e31dd6e, type: 2}

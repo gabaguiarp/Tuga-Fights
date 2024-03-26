@@ -53,7 +53,7 @@ MonoBehaviour:
     currentCampaignMatchIndex: 0
     campaignAttemptsRemaining: 0
     questProgressPercentage: 1
-    fighterBundles: 00000000
+    fighterBundles: 0000000001000000
   _analyticsData:
     activeSessionRoundsPlayed: 0
     activeSessionMatchesPlayed: 0
