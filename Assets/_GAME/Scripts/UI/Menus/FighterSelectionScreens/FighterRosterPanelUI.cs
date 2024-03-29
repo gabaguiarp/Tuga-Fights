@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Localization;
 using DG.Tweening;
+using FighterUnlockStateInfo = MemeFight.UI.FighterDisplayData.FighterUnlockStateInfo;
 
 namespace MemeFight.UI
 {
@@ -27,6 +28,7 @@ namespace MemeFight.UI
         [Header("References")]
         [SerializeField] RectTransform _rect;
         [SerializeField] CanvasGroup _canvasGroup;
+        [SerializeField] Sprite _lockedFighterIcon;
 
         [Header("Audio")]
         [SerializeField] AudioCueSO _slotClickCue;
@@ -43,7 +45,7 @@ namespace MemeFight.UI
         public bool IsInteractable => _canvasGroup.interactable;
 
         public event UnityAction<Team, int> OnSlotHighlighted;
-        public event UnityAction<Team, int> OnSlotClicked;
+        public event UnityAction<Team, int, FighterUnlockStateInfo> OnSlotClicked;
 
         /// <summary>
         /// The maximum amount of slots accountable for the panel to retain the default size.
@@ -76,27 +78,38 @@ namespace MemeFight.UI
             _rect.sizeDelta = adjustedSize;
         }
 
-        public void PopulateSlotsForTeam(Team team, List<FighterProfileSO> profiles)
+        public void PopulateSlotsForTeam(Team team, List<FighterDisplayData> displayData, bool includeLocked = false)
         {
             SlotsGroup teamSlotsGroup = GetTeamSlotsGroup(team);
             Color slotColor = _playerColors.GetColorForPlayer(_player);
 
-            if (profiles.Count > MaxSlotsDefaultSize)
-            {
-                SetLargeSize(true);
-            }
+            // Cached variables
+            Sprite fighterThumbnail = _lockedFighterIcon;
 
-            for (int i = 0; i < profiles.Count; i++)
+            int displayedSlotsCount = 0;
+            for (int i = 0; i < displayData.Count; i++)
             {
+                if (!displayData[i].State.IsUnlocked && !includeLocked)
+                    continue;
+
                 int slotIndex = i;  // We need to store the current index in a new variable, in order to pass it as an exclusive slot
                                     // index to the event
 
                 var slot = Instantiate(_fighterSlotPrefab, teamSlotsGroup.Root);
-                slot.name = "Slot_" + profiles[i].Name;
-                slot.Configure(profiles[i].Thumbnail, slotColor);
-                slot.OnClicked += () => HandleSlotClickedEvent(team, slotIndex);
+                var state = displayData[i].State;
+                fighterThumbnail = state.IsUnlocked ? displayData[i].Profile.Thumbnail : _lockedFighterIcon;
+                slot.name = "Slot_" + displayData[i].Profile.Name;
+                slot.Configure(fighterThumbnail, slotColor);
+                slot.OnClicked += () => HandleSlotClickedEvent(team, slotIndex, state);
 
                 teamSlotsGroup.Slots.Add(slot);
+
+                displayedSlotsCount++;
+            }
+
+            if (displayedSlotsCount > MaxSlotsDefaultSize)
+            {
+                SetLargeSize(true);
             }
         }
 
@@ -170,7 +183,7 @@ namespace MemeFight.UI
             return GetTeamSlotsGroup(_teamDisplayed).SelectRandom();
         }
 
-        void HandleSlotClickedEvent(Team team, int slotIndex)
+        void HandleSlotClickedEvent(Team team, int slotIndex, FighterUnlockStateInfo unlockState)
         {
             // Prevent the sound from playing when automatically selecting a slot when the panel is enabled
             if (_audioManager != null && _wasAnySlotSelected && IsInteractable)
@@ -178,7 +191,7 @@ namespace MemeFight.UI
                 _audioManager.PlaySoundUI(_slotClickCue);
             }
             
-            OnSlotClicked?.Invoke(team, slotIndex);
+            OnSlotClicked?.Invoke(team, slotIndex, unlockState);
         }
 
         /// <summary>

@@ -28,7 +28,6 @@ namespace MemeFight
         COMPANHIA_WIN,
         HERMAN_WIN,
         LILI_WIN,
-        CAMPAIGN_COMPLETED,
     }
 
     public class Stats

@@ -1,5 +1,7 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using FighterUnlockStateInfo = MemeFight.UI.FighterDisplayData.FighterUnlockStateInfo;
 
 namespace MemeFight.UI
 {
@@ -91,8 +93,33 @@ namespace MemeFight.UI
 
         void InitializeDisplays()
         {
-            _teamSelectorScreen.PopulateSlots(ResourcesManager.Fighters.Roster);
-            _fighterSelectorScreen.PopulateSlots(ResourcesManager.Fighters.Roster);
+            Dictionary<Team, List<FighterDisplayData>> rosterData = new Dictionary<Team, List<FighterDisplayData>>();
+            var roster = ResourcesManager.Fighters.Roster;
+
+            foreach (var team in ResourcesManager.Fighters.Roster.Keys)
+            {
+                if (!rosterData.ContainsKey(team))
+                    rosterData.Add(team, new List<FighterDisplayData>());
+
+                roster[team].ForEach(p =>
+                {
+                    if (ResourcesManager.Fighters.LockedFighters.ContainsKey(p))
+                    {
+                        // If the fighter is locked, we need to pass the necessary arguments
+                        // to the FighterDisplayData parameters...
+                        rosterData[team].Add(new FighterDisplayData(p, false, ResourcesManager.Fighters.LockedFighters[p]));
+                    }
+                    else
+                    {
+                        // ...otherwise we just pass the fighter profile, since the remaining
+                        // parameters will be automaticallypopulated with default values
+                        rosterData[team].Add(new FighterDisplayData(p));
+                    }
+                });
+            }
+
+            _teamSelectorScreen.PopulateSlots(rosterData);
+            _fighterSelectorScreen.PopulateSlots(rosterData);
             UpdatePlayerPanels();
         }
         #endregion
@@ -236,15 +263,24 @@ namespace MemeFight.UI
             }
         }
 
-        void CommitFighterSelectionForTeam(Team team, int fighterIndex)
+        void CommitFighterSelectionForTeam(Team team, int fighterIndex, FighterUnlockStateInfo unlockState)
         {
             Player player = team == _persistentData.SelectedTeam ? Player.One : Player.Two;
+            _fighterSelectorScreen.SetStartMatchButtonEnabled(unlockState.IsUnlocked);
+
+            if (!unlockState.IsUnlocked)
+            {
+                _fighterSelectorScreen.DisplayUnknownFighterForPlayer(player);
+                _fighterSelectorScreen.DisplayUnlockMessage(unlockState.UnlockMessage);
+                return;
+            }
 
             try
             {
                 FighterProfileSO fighter = ResourcesManager.Fighters.GetFightersForTeam(team)[fighterIndex];
 
                 _fighterSelectorScreen.SetDisplayedFighterForPlayer(player, fighter);
+                _fighterSelectorScreen.HideUnlockMessage();
                 _freeFightMatch.SetFighterForPlayer(player, fighter);
 
                 Debug.Log($"Player {(int)player} has selected {fighter.Name}");

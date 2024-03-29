@@ -1,14 +1,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using FighterUnlockStateInfo = MemeFight.UI.FighterDisplayData.FighterUnlockStateInfo;
 
 namespace MemeFight.UI
 {
     using Settings;
+    using UnityEngine.Localization;
 
     public class FighterSelectorUI : MenuScreenUI
     {
+        [Header("References")]
         [SerializeField] ButtonUI _backButton;
+        [SerializeField] ButtonUI _startMatchButton;
+        [SerializeField] Sprite _unknownFighterAvatar;
+        [SerializeField] FighterUnlockTextDisplayUI _unlockTextDisplay;
 
         [Header("Display Settings")]
         [SerializeField] PlayerColorsSO _playerColors;
@@ -17,7 +23,9 @@ namespace MemeFight.UI
         [Space(10)]
         public UnityEvent onSelectionValidated;
 
-        public event UnityAction<Team, int> OnFighterSelected;
+        public event UnityAction<Team, int, FighterUnlockStateInfo> OnFighterSelected;
+
+        const string UnknownFighterLabel = "???";
 
         [System.Serializable]
         public struct SelectionDisplay
@@ -70,7 +78,7 @@ namespace MemeFight.UI
         }
 
         #region UI Elements Control
-        public void PopulateSlots(Dictionary<Team, List<FighterProfileSO>> fighters)
+        public void PopulateSlots(Dictionary<Team, List<FighterDisplayData>> fighters)
         {
             foreach (SelectionDisplay display in _selectionDisplays)
             {
@@ -79,7 +87,7 @@ namespace MemeFight.UI
 
             foreach (var kvp in fighters)
             {
-                _selectionDisplays.ForEach(d => d.rosterPanel.PopulateSlotsForTeam(kvp.Key, kvp.Value));
+                _selectionDisplays.ForEach(d => d.rosterPanel.PopulateSlotsForTeam(kvp.Key, kvp.Value, true));
             }
         }
 
@@ -109,6 +117,16 @@ namespace MemeFight.UI
             _backButton.gameObject.SetActive(false);
             onSelectionValidated.Invoke();
         }
+
+        public void DisplayUnlockMessage(LocalizedString messageString)
+        {
+            _unlockTextDisplay.DisplayMessage(messageString);
+        }
+
+        public void HideUnlockMessage()
+        {
+            _unlockTextDisplay.SetEnabled(false);
+        }
         #endregion
 
         #region Selection Control
@@ -128,9 +146,19 @@ namespace MemeFight.UI
             return GetDisplayForPlayer(player).rosterPanel.SelectRandom();
         }
 
+        public void DisplayUnknownFighterForPlayer(Player player)
+        {
+            GetDisplayForPlayer(player).SetFighterDisplayData(_unknownFighterAvatar, UnknownFighterLabel);
+        }
+
         public void HighlightSlotForPlayer(Player player, int slotIndex, bool highlight = true)
         {
             GetDisplayForPlayer(player).rosterPanel.HighlightSlot(slotIndex, highlight);
+        }
+
+        public void SetStartMatchButtonEnabled(bool enabled)
+        {
+            _startMatchButton.SetEnabled(enabled);
         }
 
         public void ResetAllDisplays()
@@ -150,11 +178,11 @@ namespace MemeFight.UI
             _selectionDisplays.ForEach(d => d.rosterPanel.SetJoiningState(false));
         }
 
-        void HandleFighterSelected(Team team, int slotIndex)
+        void HandleFighterSelected(Team team, int slotIndex, FighterUnlockStateInfo unlockState)
         {
             try
             {
-                OnFighterSelected?.Invoke(team, slotIndex);
+                OnFighterSelected?.Invoke(team, slotIndex, unlockState);
             }
             catch
             {

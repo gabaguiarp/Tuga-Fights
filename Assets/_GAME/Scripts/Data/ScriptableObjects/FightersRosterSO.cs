@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Localization;
 
 namespace MemeFight
 {
@@ -48,6 +49,8 @@ namespace MemeFight
         {
             [field: SerializeField]
             public FightersBundleID ID { get; private set; }
+            [field: SerializeField]
+            public LocalizedString UnlockMessageString { get; private set; }
 
             [SerializeField] List<FighterProfileSO> _fighters;
 

@@ -5,13 +5,13 @@ namespace MemeFight
     public enum RewardID
     {
         BONUS_FIGHTERS_BATATOON,
-        BONUS_FIGHTERS_HERMAN_LILI
+        BONUS_FIGHTERS_HERMAN_LILI,
     }
 
     public class RewardSystem
     {
         /// <summary>
-        /// Registers the reward immediately in the <see cref=" ResourcesManager"/>.
+        /// Registers the reward immediately in the <see cref="ResourcesManager"/>.
         /// </summary>
         public static void ClaimReward(RewardID id)
         {

@@ -2093,7 +2093,6 @@ MonoBehaviour:
   _campaignStream: {fileID: 11400000, guid: 500c2e9ad369cbe4d871ad03c3380bb0, type: 2}
   _questLines:
   - {fileID: 11400000, guid: 2542ba368c885b842a9302ea20cd5ebf, type: 2}
-  - {fileID: 11400000, guid: fe799293f9998af47b4ff09b406e4040, type: 2}
 --- !u!4 &1354086074
 Transform:
   m_ObjectHideFlags: 0

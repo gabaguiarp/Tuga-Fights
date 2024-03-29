@@ -30,7 +30,6 @@ RectTransform:
   m_Children:
   - {fileID: 7996523250095303793}
   m_Father: {fileID: 787265509907110270}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -68,7 +67,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2924275291976890971}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -148,7 +146,6 @@ RectTransform:
   - {fileID: 1626586603479533410}
   - {fileID: 2924275291976890971}
   m_Father: {fileID: 7330049293384907866}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -226,7 +223,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7330049293384907866}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -430,7 +426,6 @@ RectTransform:
   - {fileID: 8802824135067352533}
   - {fileID: 4908588497024600213}
   m_Father: {fileID: 787265509907110270}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -466,7 +461,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 787265509907110270}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -504,7 +498,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4908588497024600213}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -640,7 +633,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4908588497024600213}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -736,7 +728,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 787265509907110270}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -816,7 +807,6 @@ RectTransform:
   - {fileID: 3391539305718208171}
   - {fileID: 787265509907110270}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -844,6 +834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _defaultSelection: {fileID: 0}
+  _registerMenuCommands: 1
   _buttonsToTrack: []
   _player: 1
   _playerColors: {fileID: 11400000, guid: 7ff8b347b2302534282840e2944f6d27, type: 2}
@@ -857,6 +848,7 @@ MonoBehaviour:
   _joinPrompt: {fileID: 8001192778181440984}
   _rect: {fileID: 7330049293384907866}
   _canvasGroup: {fileID: 4787456826550386392}
+  _lockedFighterIcon: {fileID: 21300000, guid: 9af0e457ccac28d4f97097e51b4ae0a7, type: 3}
   _slotClickCue: {fileID: 11400000, guid: 4e1c838b1ed698547a1cc7687b795a7e, type: 2}
 --- !u!114 &7377859305954647994
 MonoBehaviour:
@@ -928,7 +920,6 @@ RectTransform:
   - {fileID: 4126616424244360632}
   - {fileID: 6506992605074558489}
   m_Father: {fileID: 2924275291976890971}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -966,6 +957,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1626586603479533410}
     m_Modifications:
     - target: {fileID: 6372270262675035429, guid: e49e7b21f44919a4eb4614698c743326, type: 3}
@@ -1065,6 +1057,9 @@ PrefabInstance:
       value: 120
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e49e7b21f44919a4eb4614698c743326, type: 3}
 --- !u!224 &7996523250095303793 stripped
 RectTransform:

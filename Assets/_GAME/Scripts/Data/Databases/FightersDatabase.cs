@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using static MemeFight.FightersRosterSO;
+using UnityEngine.Localization;
 
 namespace MemeFight
 {
@@ -12,6 +12,10 @@ namespace MemeFight
     {
         /// <summary>Contains references to the fighters, separated by team.</summary>
         public Dictionary<Team, List<FighterProfileSO>> Roster { get; private set; }
+        /// <summary>
+        /// Pairs all of the locked fighter profiles with their respective unlock message.
+        /// </summary>
+        public Dictionary<FighterProfileSO, LocalizedString> LockedFighters { get; private set; }
 
         Dictionary<Team, TeamDataSO> _teamsIndexer;
 
@@ -22,19 +26,37 @@ namespace MemeFight
 
         void Init(FightersRosterSO roster, PersistentDataSO persistentData)
         {
-            // Register main fighters
             Roster = new Dictionary<Team, List<FighterProfileSO>>();
+            LockedFighters = new Dictionary<FighterProfileSO, LocalizedString>();
+
+            // Register main fighters
             roster.Fighters.ForEach(f => RegisterFighter(f));
 
             // Register bonus fighters
             foreach (var bundle in roster.BonusFighters)
             {
-                if (persistentData.ContainsBundle(bundle.ID))
+                bool isBundleUnlocked = persistentData.ContainsBundle(bundle.ID);
+                var fighters = roster.GetBonusFighters(bundle.ID);
+
+                fighters.ForEach(f =>
                 {
-                    var fighters = roster.GetBonusFighters(bundle.ID);
-                    fighters.ForEach(f => RegisterFighter(f));
-                }
+                    RegisterFighter(f);
+
+                    // Check if bonus fighter is unlocked
+                    if (!isBundleUnlocked)
+                        LockedFighters.Add(f, bundle.UnlockMessageString);
+                });
             }
+
+            // PREVIOUS METHOD (WITHOUT LOCKED FIGHTERS LIST)
+            //foreach (var bundle in roster.BonusFighters)
+            //{
+            //    if (persistentData.ContainsBundle(bundle.ID))
+            //    {
+            //        var fighters = roster.GetBonusFighters(bundle.ID);
+            //        fighters.ForEach(f => RegisterFighter(f));
+            //    }
+            //}
 
             // Populate the teams indexer with the data containers for each team
             _teamsIndexer = new Dictionary<Team, TeamDataSO>();
