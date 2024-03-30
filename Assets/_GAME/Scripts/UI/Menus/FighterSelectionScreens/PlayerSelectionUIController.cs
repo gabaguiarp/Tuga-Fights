@@ -80,6 +80,8 @@ namespace MemeFight.UI
             _inputManager = InputManager.Instance;
             _sceneLoader = SceneLoader.Instance;
 
+            //ResourcesManager.OnDatabasesRefreshed += InitializeDisplays;
+
             InitializeDisplays();
         }
 
@@ -89,10 +91,13 @@ namespace MemeFight.UI
 
             InputManager.OnPlayerJoined -= HandlePlayerJoined;
             InputManager.OnPlayerLeft -= HandlePlayerLeft;
+
+            //ResourcesManager.OnDatabasesRefreshed -= InitializeDisplays;
         }
 
         void InitializeDisplays()
         {
+            Debug.Log("DISPLAYS INITIALISED");
             Dictionary<Team, List<FighterDisplayData>> rosterData = new Dictionary<Team, List<FighterDisplayData>>();
             var roster = ResourcesManager.Fighters.Roster;
 

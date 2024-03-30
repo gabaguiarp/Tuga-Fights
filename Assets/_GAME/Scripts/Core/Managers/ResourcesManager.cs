@@ -27,6 +27,7 @@ namespace MemeFight
 
         public static event UnityAction OnLocalizationInitialized;
         public static event UnityAction OnResourcesLoadingComplete;
+        public static event UnityAction OnDatabasesRefreshed;
 
         #region Getters
         public static PersistentDataSO PersistentData
@@ -121,6 +122,7 @@ namespace MemeFight
             }
 
             Instance.InitializeDatabases();
+            OnDatabasesRefreshed?.Invoke();
         }
 
         protected override void OnDestroy()

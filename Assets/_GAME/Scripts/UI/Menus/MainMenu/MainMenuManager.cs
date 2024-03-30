@@ -126,7 +126,10 @@ namespace MemeFight.Menus
         void OnAfterQuestChecking()
         {
             if (_questsChecker.IsGettingRewardForCompletingQuestline)
+            {
+                EnableInput();
                 return;
+            }
 
             // NOTE: After checking for quest completion on the current questline, if all
             // quests were complete for the first time, we avoid checking for bonus rewards,
