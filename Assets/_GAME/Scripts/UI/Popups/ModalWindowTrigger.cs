@@ -13,18 +13,33 @@ namespace MemeFight.UI.Popups
         public ButtonConfig confirmAction;
         public ButtonConfig declineAction;
 
+        public event UnityAction OnPopupClosed;
+
         [ContextMenu("Open Window")]
-        public void OpenWindow()
+        public bool OpenWindow()
         {
             if (Application.isPlaying)
-                PopupsManager.Instance.DisplayWindow(this);
+            {
+                OnOpenWindowCallback();
+                return true;
+            }
+
+            return false;
         }
 
         [ContextMenu("Close Window")]
         public void CloseWindow()
         {
             if (Application.isPlaying)
+            {
                 PopupsManager.Instance.CloseCurrentWindow();
+                OnPopupClosed?.Invoke();
+            }
+        }
+
+        protected virtual void OnOpenWindowCallback()
+        {
+            PopupsManager.Instance.DisplayWindow(this);
         }
     }
 

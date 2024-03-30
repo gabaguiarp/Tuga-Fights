@@ -19,7 +19,7 @@ MonoBehaviour:
     android: 60
     iOS: 60
   _loadData: 0
-  _saveData: 1
+  _saveData: 0
   _analyticsEnabled: 1
   _crashlyticsEnabled: 1
   _contactURL: mailto:playatplayhouse@gmail.com

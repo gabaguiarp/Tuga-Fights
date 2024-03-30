@@ -20,6 +20,10 @@ namespace MemeFight
                 case RewardID.BONUS_FIGHTERS_BATATOON:
                     ResourcesManager.PersistentData.AddFighterBundle(FightersBundleID.BATATOON);
                     break;
+
+                case RewardID.BONUS_FIGHTERS_HERMAN_LILI:
+                    ResourcesManager.PersistentData.AddFighterBundle(FightersBundleID.HERMAN_LILI);
+                    break;
             }
         }
 

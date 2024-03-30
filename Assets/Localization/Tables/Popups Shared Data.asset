@@ -59,6 +59,10 @@ MonoBehaviour:
     m_Key: ok
     m_Metadata:
       m_Items: []
+  - m_Id: 250111592538091520
+    m_Key: bonusRewardPopupHermanLili
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -18,4 +18,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 04a5655aa91a614488be98c468b41a11, type: 2}
   - {fileID: 11400000, guid: 629f4c840e76fb642bafba71756859a6, type: 2}
   - {fileID: 11400000, guid: d187754abc249b348b01478a74429a6a, type: 2}
+  _intermediateRewards:
+  - _name: "Herman Jos\xE9 / Lili Cane\xE7as"
+    _requiredSteps: 0000000001000000
+    _rewardId: 1
   _reward: 0

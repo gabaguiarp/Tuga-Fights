@@ -1,5 +1,7 @@
 using MemeFight.UI;
 using MemeFight.UI.Popups;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
@@ -16,6 +18,7 @@ namespace MemeFight.Menus
         [SerializeField] PlayerSelectionUIController _playerSelectorController;
         [SerializeField] QuestsPanelUI _questsPanel;
         [SerializeField] ModalWindowTrigger _questRewardPopupTrigger;
+        [SerializeField] BonusRewardsPopupTrigger _bonusRewardsPopupTrigger;
 
         [Header("References")]
         [SerializeField] PersistentDataSO _persistentData;
@@ -32,6 +35,9 @@ namespace MemeFight.Menus
 
         [field: SerializeField, ReadOnly]
         public bool IsCheckingQuests { get; private set; } = false;
+        [field: SerializeField, ReadOnly]
+        public bool IsGettingBonusRewards { get; private set; } = false;
+        public bool IsGettingRewardForCompletingQuestline => _wereAllQuestsCompleted;
 
         public event UnityAction OnQuestCheckingStarted;
 
@@ -180,7 +186,7 @@ namespace MemeFight.Menus
             // If any new quest was completed, raise the corresponding event.
             if (newQuestsCompleted)
             {
-                result = "new quest(s) completed!";
+                result = "new quest(s) complete(d)!";
             }
 
             // If new quests were completed or the last registered bar percentage is lower than the current one, animate the quest
@@ -197,6 +203,53 @@ namespace MemeFight.Menus
             }
 
             Debug.Log("Quest checking complete: " + result);
+        }
+
+        public bool CheckBonusRewards()
+        {
+            if (!IsGettingBonusRewards)
+            {
+                var rewards = QuestSystem.GetUnlockedBonusRewards();
+                if (rewards.Count > 0)
+                {
+                    StartCoroutine(GiveRewardsAndWaitForProcessCompletion(rewards));
+                    return true;
+                }
+            }
+
+            return false;
+
+            IEnumerator GiveRewardsAndWaitForProcessCompletion(List<RewardID> rewardsList)
+            {
+                InputManager inputManager = InputManager.Instance;
+                IsGettingBonusRewards = true;
+
+                Debug.Log("Getting bonus rewards...");
+
+                yield return CoroutineUtils.GetWaitRealtime(0.5f);
+
+                for (int i = 0; i < rewardsList.Count; i++)
+                {
+                    RewardSystem.UnlockReward(rewardsList[i]);
+                    _bonusRewardsPopupTrigger.TriggerPopupForReward(rewardsList[i]);
+                    inputManager.EnableMenusInput();
+
+                    while (_bonusRewardsPopupTrigger.IsPopupOpen)
+                    {
+                        yield return null;
+                    }
+
+                    if (i < rewardsList.LastIndex())
+                    {
+                        inputManager.DisableInput();
+                        yield return CoroutineUtils.GetWaitRealtime(0.1f);
+                    }
+                }
+
+                Debug.Log("All bonus rewards were given!");
+
+                IsGettingBonusRewards = false;
+            }
         }
 
         #region External Callbacks

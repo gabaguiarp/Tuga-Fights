@@ -2,13 +2,15 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Localization;
+using UnityEngine.UI;
 
 namespace MemeFight.UI.Popups
 {
     public class ModalWindowUI : MonoBehaviour
     {
-        [Header("Text")]
+        [Header("Components")]
         [SerializeField] LocalizedTextUI _displayText;
+        [SerializeField] Image _displayImage;
 
         [Header("Buttons")]
         [SerializeField] ButtonUI _confirmButton;
@@ -57,6 +59,19 @@ namespace MemeFight.UI.Popups
 
             _confirmButton.gameObject.SetActive(confirmBtnConfig.HasCallback);
             _declineButton.gameObject.SetActive(declineBtnConfig.HasCallback);
+        }
+
+        public void Configure(LocalizedString textString, Sprite displayImage, ButtonConfig confirmBtnConfig, ButtonConfig declineBtnConfig)
+        {
+            Configure(textString, confirmBtnConfig, declineBtnConfig);
+            if (_displayImage != null)
+            {
+                _displayImage.sprite = displayImage;
+            }
+            else
+            {
+                Debug.LogWarning("Unable to set modal window display image, because no image component was assigned!");
+            }
         }
 
         public void Open()

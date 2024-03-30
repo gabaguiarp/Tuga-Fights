@@ -71,6 +71,11 @@ MonoBehaviour:
     m_Localized: OK
     m_Metadata:
       m_Items: []
+  - m_Id: 250111592538091520
+    m_Localized: "You have unlocked a new set of fighters!\nYou can now play as Herman
+      Jos\xE9 and Lili Cane\xE7as."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
