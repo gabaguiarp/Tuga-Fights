@@ -113,7 +113,44 @@ namespace MemeFight
             return Roster[team][randomIndex];
         }
 
-        public int GetTotalFightersForTeam(Team team) => Roster[team].Count;
+        public int GetTotalFightersForTeam(Team team, bool onlyAvailable = false)
+        {
+            if (onlyAvailable)
+            {
+                int totalFighters = 0;
+                foreach (var fighter in Roster[team])
+                {
+                    if (!LockedFighters.ContainsKey(fighter))
+                        totalFighters++;
+                }
+
+                return totalFighters;
+            }
+
+
+            return Roster[team].Count;
+        }
+
+        /// <summary>
+        /// Returns an array with all the fighter indexes that correspond to an unlocked fighter
+        /// of the provided <paramref name="team"/>.<br></br>
+        /// Note that locked fighters will not be considered.
+        /// </summary>
+        public int[] GetAvailableFighterIndexesForTeam(Team team)
+        {
+            List<int> results = new List<int>();
+
+            for (int i = 0; i < Roster[team].Count; i++)
+            {
+                if (!LockedFighters.ContainsKey(Roster[team][i]))
+                {
+                    int fighterIndex = i;
+                    results.Add(fighterIndex);
+                }
+            }
+
+            return results.ToArray();
+        }
 
         /// <summary>
         /// Returns the team that acts as an opponent of <paramref name="myTeam"/>.

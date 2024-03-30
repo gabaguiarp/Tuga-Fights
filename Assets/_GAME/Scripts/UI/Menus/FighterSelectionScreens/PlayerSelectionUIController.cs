@@ -198,16 +198,23 @@ namespace MemeFight.UI
                 Debug.Log("Picking random CPU fighter...");
 
                 // Select a random fighter for the CPU in the background
+                // NOTE: We only consider fighters that have been unlocked by the player,
+                // therefore we request an array of available indexes from the ResourcesManager
                 Team cpuTeam = FightersDatabase.GetOpposingTeam(_persistentData.SelectedTeam);
-                int cpuSelectionIndex = _fighterSelectorScreen.SelectRandomFighterForPlayer(Player.Two);
+                int[] availableIndexes = ResourcesManager.Fighters.GetAvailableFighterIndexesForTeam(cpuTeam);
+                int cpuSelectionIndex = _fighterSelectorScreen.SelectRandomFighterForPlayer(Player.Two, availableIndexes);
 
                 // Generate array for the faked CPU selection cycles and draw a random number for each cycle
                 int[] cycleIndexes = new int[RandomSelectionCycles];
-                int totalFighters = ResourcesManager.Fighters.GetTotalFightersForTeam(cpuTeam);
+                //int totalFighters = ResourcesManager.Fighters.GetTotalFightersForTeam(cpuTeam);
 
+                int randomIndex = 0;
                 for (int i = 0; i < RandomSelectionCycles; i++)
                 {
-                    cycleIndexes[i] = Randomizer.GetRandom(0, totalFighters, true);
+                    randomIndex = Randomizer.GetRandom(0, availableIndexes.Length, true);
+                    cycleIndexes[i] = availableIndexes[randomIndex];
+
+                    //cycleIndexes[i] = Randomizer.GetRandom(0, totalFighters, true);
                 }
 
                 // Animate the displays to reflect the current cycle selection

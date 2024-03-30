@@ -141,9 +141,9 @@ namespace MemeFight.UI
             SetDisplayedFighterForPlayer(player, profile, animate);
         }
 
-        public int SelectRandomFighterForPlayer(Player player)
+        public int SelectRandomFighterForPlayer(Player player, int[] availableIndexes)
         {
-            return GetDisplayForPlayer(player).rosterPanel.SelectRandom();
+            return GetDisplayForPlayer(player).rosterPanel.SelectRandom(availableIndexes);
         }
 
         public void DisplayUnknownFighterForPlayer(Player player)

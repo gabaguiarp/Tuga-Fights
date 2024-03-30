@@ -178,9 +178,9 @@ namespace MemeFight.UI
             }
         }
 
-        public int SelectRandom()
+        public int SelectRandom(int[] availableIndexes)
         {
-            return GetTeamSlotsGroup(_teamDisplayed).SelectRandom();
+            return GetTeamSlotsGroup(_teamDisplayed).SelectRandom(availableIndexes);
         }
 
         void HandleSlotClickedEvent(Team team, int slotIndex, FighterUnlockStateInfo unlockState)
@@ -289,11 +289,13 @@ namespace MemeFight.UI
                 Root.gameObject.SetActive(active);
             }
 
-            public int SelectRandom()
+            public int SelectRandom(int[] availableIndexes)
             {
-                int randomIndex = Randomizer.GetRandom(0, Slots.Count);
-                Slots[randomIndex].Select();
-                return randomIndex;
+                int randomIndex = Randomizer.GetRandom(0, availableIndexes.Length);
+                int selectionIndex = availableIndexes[randomIndex];
+                Slots[selectionIndex].Select();
+
+                return selectionIndex;
             }
 
             public void HighlightSlot(int slotIndex, bool highlight)
