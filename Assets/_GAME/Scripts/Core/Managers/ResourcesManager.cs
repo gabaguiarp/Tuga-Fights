@@ -121,6 +121,8 @@ namespace MemeFight
                 return;
             }
 
+            Debug.Log("Refreshing databases...");
+
             Instance.InitializeDatabases();
             OnDatabasesRefreshed?.Invoke();
         }

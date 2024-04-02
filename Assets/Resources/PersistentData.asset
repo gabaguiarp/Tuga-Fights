@@ -48,8 +48,8 @@ MonoBehaviour:
       Value: 1
   _gameplayStream:
     gameMode: 1
-    currentCampaignMatchIndex: 0
-    campaignAttemptsRemaining: 0
+    currentCampaignMatchIndex: 7
+    campaignAttemptsRemaining: 3
     questProgressPercentage: 0.16666667
     fighterBundles: 01000000
   _analyticsData:

@@ -256,6 +256,8 @@ namespace MemeFight.UI
                 UnityEditor.EditorUtility.SetDirty(gameObject);
             }
 #endif
+
+            _slotGroups.Clear();
         }
 
         [ContextMenu("Animate Display")]
