@@ -66,6 +66,8 @@ namespace MemeFight.Characters
                     }
                 }
             }
+
+            Debug.Log("Layers setup applied".ToUpper());
         }
     }
 
