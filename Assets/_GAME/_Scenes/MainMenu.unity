@@ -3139,7 +3139,7 @@ MonoBehaviour:
           m_FallbackState: 0
           m_WaitForCompletion: 0
           m_LocalVariables: []
-        displayImage: {fileID: 21300000, guid: 17dde08a60a2b7044b725689cf921619, type: 3}
+        displayImage: {fileID: 21300000, guid: b140d14b6e3b69142840d79fee89f348, type: 3}
   _modalTrigger: {fileID: 1040430306}
   <IsPopupOpen>k__BackingField: 0
   references:
