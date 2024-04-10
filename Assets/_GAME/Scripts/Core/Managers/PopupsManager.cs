@@ -26,6 +26,9 @@ namespace MemeFight
 
             _modalWindow.Configure(window.displayTextString, window.confirmAction, window.declineAction);
             _modalWindow.Open();
+
+            if (window.popupAudioCue != null)
+                AudioManager.Instance.PlaySoundUI(window.popupAudioCue);
         }
 
         public void DisplayBonusWindow(BonusModalWindowTrigger window)
@@ -35,6 +38,9 @@ namespace MemeFight
 
             _bonusModalWindow.Configure(window.displayTextString, window.imageToDisplay, window.confirmAction, window.declineAction);
             _bonusModalWindow.Open();
+
+            if (window.popupAudioCue != null)
+                AudioManager.Instance.PlaySoundUI(window.popupAudioCue);
         }
 
         public void CloseCurrentWindow()

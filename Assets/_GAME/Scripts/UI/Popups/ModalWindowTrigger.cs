@@ -8,8 +8,10 @@ namespace MemeFight.UI.Popups
     public class ModalWindowTrigger : MonoBehaviour
     {
         public LocalizedString displayTextString;
+        [Tooltip("The audio cue to play when this popup is displayed.")]
+        public AudioCueSO popupAudioCue;
 
-        [Space(10)]
+        [Header("Actions")]
         public ButtonConfig confirmAction;
         public ButtonConfig declineAction;
 

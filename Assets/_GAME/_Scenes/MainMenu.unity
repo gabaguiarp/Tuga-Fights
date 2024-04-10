@@ -1565,6 +1565,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  popupAudioCue: {fileID: 0}
   confirmAction:
     displayNameString:
       m_TableReference:
@@ -3181,6 +3182,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  popupAudioCue: {fileID: 11400000, guid: 491bf59a348f3d34ba28e31f1561502e, type: 2}
   confirmAction:
     displayNameString:
       m_TableReference:
