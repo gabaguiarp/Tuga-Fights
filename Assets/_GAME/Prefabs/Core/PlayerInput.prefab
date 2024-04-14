@@ -28,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6183528034283750079}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3575524312222544703
 MonoBehaviour:
@@ -252,22 +252,6 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: a3df8673-c6a7-456b-913d-20db1625afaf
     m_ActionName: Gameplay/Pause[/Keyboard/escape,/DualShock4GamepadHID/start]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6183528034283750065}
-        m_TargetAssemblyTypeName: MemeFight.Input.PlayerInputReader, Assembly-CSharp
-        m_MethodName: Pause
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 09e28fef-1e38-4875-aab8-7e2c81c76c57
-    m_ActionName: Menus/Pause[/Keyboard/escape,/DualShock4GamepadHID/start]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6183528034283750065}
