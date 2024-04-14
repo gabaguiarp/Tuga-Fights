@@ -782,7 +782,7 @@
                     "path": "<Touchscreen>/touch*/position",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Touch",
+                    "groups": "Touch;Gamepad",
                     "action": "Point",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -804,7 +804,7 @@
                     "path": "<Touchscreen>/touch*/Press",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Touch",
+                    "groups": "Touch;Gamepad",
                     "action": "Click",
                     "isComposite": false,
                     "isPartOfComposite": false

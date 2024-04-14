@@ -15,6 +15,7 @@ namespace MemeFight.UI
         [SerializeField] OnScreenButtonCustom _rightButton;
 
         [Header("Action Buttons")]
+        [SerializeField] OnScreenButtonCustom _blockButton;
         [SerializeField] OnScreenButtonUI _punchButton;
         [SerializeField] OnScreenButtonUI _kickButton;
 
@@ -49,6 +50,13 @@ namespace MemeFight.UI
                 _rightButton.OnHeldDown += HandleRightButtonHeldDown;
                 _rightButton.OnRelease += HandleDirectionButtonReleased;
             }
+
+            // We are tracking this button in particular because there is an issue with Unity's Input System
+            // that causes the button to be released early if the player moves the finger slightly on mobile.
+            // This has to due to an unhandled issue, related to a fight between automatic touch and gamepad
+            // input scheme switching
+            _blockButton.OnHeldDown += HandleBlockButtonHeldDown;
+            _blockButton.OnRelease += HandleBlockButtonReleased;
         }
 
         #region Direction Button Responders
@@ -65,6 +73,18 @@ namespace MemeFight.UI
         void HandleDirectionButtonReleased()
         {
             _inputChannel.RaiseMoveEvent(Vector2.zero);
+        }
+        #endregion
+
+        #region Action Buttons Responders
+        void HandleBlockButtonHeldDown()
+        {
+            _inputChannel.RaiseBlockStartedEvent();
+        }
+
+        void HandleBlockButtonReleased()
+        {
+            _inputChannel.RaiseBlockCanceledEvent();
         }
         #endregion
 

@@ -6,19 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Game/_SCENES/STARTUP.unity
+    path: Assets/_GAME/_Scenes/STARTUP.unity
     guid: cb7aa26a64a23b14f82e288ed16a5841
   - enabled: 1
-    path: Assets/_Game/_SCENES/GAMEMANAGER.unity
+    path: Assets/_GAME/_Scenes/GAMEMANAGER.unity
     guid: 624cf58eeb500bb468f7447502f49d33
   - enabled: 1
-    path: Assets/_Game/_SCENES/IntroBumpers.unity
+    path: Assets/_GAME/_Scenes/IntroBumpers.unity
     guid: d498a5688c6199b4295501021d44c0f0
   - enabled: 1
-    path: Assets/_Game/_SCENES/MainMenu.unity
+    path: Assets/_GAME/_Scenes/MainMenu.unity
     guid: b3c376f7e6991574281cef4b23c0a9af
   - enabled: 1
-    path: Assets/_Game/_SCENES/MatchArena.unity
+    path: Assets/_GAME/_Scenes/MatchArena.unity
     guid: 1c82d4fd96e82ba4fb0d8c6a9fec81fc
   - enabled: 1
     path: Assets/_GAME/_Scenes/Tests/TrainingArena.unity
