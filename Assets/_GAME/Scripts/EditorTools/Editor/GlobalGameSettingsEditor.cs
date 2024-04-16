@@ -23,6 +23,7 @@ namespace MemeFight.EditorTools
             public static readonly GUIContent ServicesLabel = new GUIContent("Services");
             public static readonly GUIContent AnalyticsEnabledLabel = new GUIContent("Analytics Enabled");
             public static readonly GUIContent CrashlyticsEnabledLabel = new GUIContent("Crashlytics Enabled");
+            public static readonly GUIContent CloudMessagingEnabledLabel = new GUIContent("Cloud Messaging Enabled");
 
             public static readonly GUIContent ExternalLinksLabel = new GUIContent("External Links");
             public static readonly GUIContent ContactURL_Label = new GUIContent("Contact URL");
@@ -38,6 +39,7 @@ namespace MemeFight.EditorTools
 
         SerializedProperty _propAnalyticsEnabled;
         SerializedProperty _propCrashlyticsEnabled;
+        SerializedProperty _propCloudMessagingEnabled;
 
         SerializedProperty _propContactURL;
         SerializedProperty _propPrivacyPolicyURLs;
@@ -58,6 +60,7 @@ namespace MemeFight.EditorTools
 
             _propAnalyticsEnabled = serializedObject.FindProperty("_analyticsEnabled");
             _propCrashlyticsEnabled = serializedObject.FindProperty("_crashlyticsEnabled");
+            _propCloudMessagingEnabled = serializedObject.FindProperty("_cloudMessagingEnabled");
 
             _propContactURL = serializedObject.FindProperty("_contactURL");
             _propPrivacyPolicyURLs = serializedObject.FindProperty("_privacyPolicyURLs");
@@ -105,6 +108,7 @@ namespace MemeFight.EditorTools
             EditorGUI.indentLevel = 1;
             EditorGUILayout.PropertyField(_propAnalyticsEnabled, Styles.AnalyticsEnabledLabel);
             EditorGUILayout.PropertyField(_propCrashlyticsEnabled, Styles.CrashlyticsEnabledLabel);
+            EditorGUILayout.PropertyField(_propCloudMessagingEnabled, Styles.CloudMessagingEnabledLabel);
             EditorGUI.indentLevel = 0;
 
             EditorGUILayout.Space();
