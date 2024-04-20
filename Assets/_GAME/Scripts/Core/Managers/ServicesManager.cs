@@ -3,6 +3,7 @@ using Firebase.Analytics;
 using Firebase.Crashlytics;
 using System.Threading.Tasks;
 using UnityEngine;
+
 #if UNITY_ANDROID
 using GooglePlayGames;
 using GooglePlayGames.BasicApi;
@@ -12,10 +13,13 @@ namespace MemeFight.Services
 {
     public class ServicesManager : Singleton<ServicesManager>
     {
+        [Header("References")]
+        [SerializeField] FirebaseCloudMessagingServiceHanlder _cloudMessagingService;
+
         [Header("Services Status")]
         [SerializeField, ReadOnly] bool _firebaseInit = false;
         [SerializeField, ReadOnly] bool _googlePlayGamesInit = false;
-
+        
         bool _isAuthenticatingToGooglePlayGames = false;
 #if UNITY_ANDROID
         PlayGamesPlatform _playGamesPlatform;
@@ -61,6 +65,18 @@ namespace MemeFight.Services
                     FirebaseAnalytics.SetAnalyticsCollectionEnabled(GameManager.GlobalSettings.AnalyticsEnabled);
                     Crashlytics.IsCrashlyticsCollectionEnabled = GameManager.GlobalSettings.CrashlyticsEnabled;
 
+                    if (GameManager.GlobalSettings.CrashlyticsEnabled)
+                    {
+                        // When this property is set to true, Crashlytics will report all
+                        // uncaught exceptions as fatal events. This is the recommended behavior.
+                        Crashlytics.ReportUncaughtExceptionsAsFatal = true;
+                    }
+
+                    if (GameManager.GlobalSettings.CloudMessagingEnabled)
+                    {
+                        _cloudMessagingService.Init();
+                    }
+
                     if (GameManager.IsDebugMode)
                     {
                         FirebaseApp.LogLevel = LogLevel.Debug;
@@ -72,7 +88,7 @@ namespace MemeFight.Services
                 else
                 {
                     // Firebase Unity SDK is not safe to use here.
-                    Debug.LogErrorFormat("[Firebase] Could not resolve all Firebase dependencies: {0}", dependencyStatus);
+                    Debug.LogErrorFormat("[Firebase] Could not resolve all dependencies: {0}", dependencyStatus);
                 }
             });
         }
