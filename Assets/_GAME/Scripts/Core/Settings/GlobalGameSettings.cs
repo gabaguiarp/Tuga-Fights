@@ -19,6 +19,7 @@ namespace MemeFight.Core
         // SERVICES
         [SerializeField] bool _analyticsEnabled = true;
         [SerializeField] bool _crashlyticsEnabled = true;
+        [SerializeField] bool _cloudMessagingEnabled = true;
 
         // EXTERNAL LINKS
         [SerializeField] string _contactURL;
@@ -59,6 +60,8 @@ namespace MemeFight.Core
 #endif
             }
         }
+
+        public bool CloudMessagingEnabled => _cloudMessagingEnabled;
 
         // EXTERNAL LINKS
         public string ContactURL => _contactURL;
