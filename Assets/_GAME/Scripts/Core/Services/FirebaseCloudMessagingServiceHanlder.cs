@@ -24,13 +24,13 @@ namespace MemeFight.Services
 
         void OnTokenReceived(object sender, TokenReceivedEventArgs token)
         {
-            Debug.Log("Received Registration Token: " + token.Token);
+            Debug.Log("[Cloud Messaging Handler] Received Registration Token: " + token.Token);
         }
 
         void OnMessageReceived(object sender, MessageReceivedEventArgs e)
         {
-            Debug.Log("Received a new message from: " + e.Message.From);
-            Debug.Log("Message ID: " + e.Message.MessageId);
+            Debug.Log("[Cloud Messaging Handler] Received a new message from: " + e.Message.From);
+            Debug.Log("[Cloud Messaging Handler] Message ID: " + e.Message.MessageId);
         }
 
         public void Shutdown()

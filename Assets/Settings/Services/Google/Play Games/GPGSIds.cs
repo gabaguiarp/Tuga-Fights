@@ -24,28 +24,31 @@
 
 public static class GPGSIds
 {
-    public const string achievement_turbinada = "CgkIgaaC3_wWEAIQDA"; // <GPGSID>
-    public const string achievement_chama_o_batatinha = "CgkIgaaC3_wWEAIQFg"; // <GPGSID>
-    public const string achievement_querida_jlia = "CgkIgaaC3_wWEAIQCg"; // <GPGSID>
-    public const string achievement_aqui_s_pra_ti = "CgkIgaaC3_wWEAIQDg"; // <GPGSID>
-    public const string achievement_tens_cara_de_estpida_e_de_parva = "CgkIgaaC3_wWEAIQCw"; // <GPGSID>
-    public const string achievement_malat = "CgkIgaaC3_wWEAIQCA"; // <GPGSID>
-    public const string achievement_toda_a_noite = "CgkIgaaC3_wWEAIQDw"; // <GPGSID>
-    public const string achievement_beijinhos_abraos_e_muitos_palhaos = "CgkIgaaC3_wWEAIQFQ"; // <GPGSID>
-    public const string achievement_deite_na_cara_e_doute_na_tromba_toda = "CgkIgaaC3_wWEAIQAw"; // <GPGSID>
-    public const string achievement_mentira = "CgkIgaaC3_wWEAIQBQ"; // <GPGSID>
-    public const string achievement_que_prca_p = "CgkIgaaC3_wWEAIQDQ"; // <GPGSID>
-    public const string achievement_seus_vendidos = "CgkIgaaC3_wWEAIQEA"; // <GPGSID>
-    public const string achievement_nossa_que_biolncia = "CgkIgaaC3_wWEAIQBA"; // <GPGSID>
-    public const string achievement_ol_a_em_casa = "CgkIgaaC3_wWEAIQEg"; // <GPGSID>
-    public const string achievement_uma_salva_de_palmas = "CgkIgaaC3_wWEAIQCQ"; // <GPGSID>
-    public const string achievement_olha_a_parva_olha_a_pindrica = "CgkIgaaC3_wWEAIQBg"; // <GPGSID>
-    public const string achievement_um_grande_beijinho = "CgkIgaaC3_wWEAIQEQ"; // <GPGSID>
-    public const string achievement_convida_o_companhia = "CgkIgaaC3_wWEAIQFw"; // <GPGSID>
-    public const string achievement_conquistador = "CgkIgaaC3_wWEAIQFA"; // <GPGSID>
-    public const string achievement_o_bacalhau_quer_alho = "CgkIgaaC3_wWEAIQAQ"; // <GPGSID>
-    public const string achievement_intocvel = "CgkIgaaC3_wWEAIQEw"; // <GPGSID>
-    public const string achievement_sai_da_minha_vida = "CgkIgaaC3_wWEAIQBw"; // <GPGSID>
-    public const string achievement_oliveirinha_da_serra = "CgkIgaaC3_wWEAIQAg"; // <GPGSID>
+        public const string achievement_turbinada = "CgkIgaaC3_wWEAIQDA"; // <GPGSID>
+        public const string achievement_chama_o_batatinha = "CgkIgaaC3_wWEAIQFg"; // <GPGSID>
+        public const string achievement_querida_jlia = "CgkIgaaC3_wWEAIQCg"; // <GPGSID>
+        public const string achievement_aqui_s_pra_ti = "CgkIgaaC3_wWEAIQDg"; // <GPGSID>
+        public const string achievement_tens_cara_de_estpida_e_de_parva = "CgkIgaaC3_wWEAIQCw"; // <GPGSID>
+        public const string achievement_malat = "CgkIgaaC3_wWEAIQCA"; // <GPGSID>
+        public const string achievement_toda_a_noite = "CgkIgaaC3_wWEAIQDw"; // <GPGSID>
+        public const string achievement_no_me_chamem_maria_alice = "CgkIgaaC3_wWEAIQGg"; // <GPGSID>
+        public const string achievement_deite_na_cara_e_doute_na_tromba_toda = "CgkIgaaC3_wWEAIQAw"; // <GPGSID>
+        public const string achievement_mentira = "CgkIgaaC3_wWEAIQBQ"; // <GPGSID>
+        public const string achievement_que_prca_p = "CgkIgaaC3_wWEAIQDQ"; // <GPGSID>
+        public const string achievement_seus_vendidos = "CgkIgaaC3_wWEAIQEA"; // <GPGSID>
+        public const string achievement_nossa_que_biolncia = "CgkIgaaC3_wWEAIQBA"; // <GPGSID>
+        public const string achievement_ol_a_em_casa = "CgkIgaaC3_wWEAIQEg"; // <GPGSID>
+        public const string achievement_convida_o_companhia = "CgkIgaaC3_wWEAIQFw"; // <GPGSID>
+        public const string achievement_uma_salva_de_palmas = "CgkIgaaC3_wWEAIQCQ"; // <GPGSID>
+        public const string achievement_olha_a_parva_olha_a_pindrica = "CgkIgaaC3_wWEAIQBg"; // <GPGSID>
+        public const string achievement_um_grande_beijinho = "CgkIgaaC3_wWEAIQEQ"; // <GPGSID>
+        public const string achievement_beijinhos_abraos_e_muitos_palhaos = "CgkIgaaC3_wWEAIQFQ"; // <GPGSID>
+        public const string achievement_conquistador = "CgkIgaaC3_wWEAIQFA"; // <GPGSID>
+        public const string achievement_o_bacalhau_quer_alho = "CgkIgaaC3_wWEAIQAQ"; // <GPGSID>
+        public const string achievement_no_havia_necessidade = "CgkIgaaC3_wWEAIQGQ"; // <GPGSID>
+        public const string achievement_sai_da_minha_vida = "CgkIgaaC3_wWEAIQBw"; // <GPGSID>
+        public const string achievement_intocvel = "CgkIgaaC3_wWEAIQEw"; // <GPGSID>
+        public const string achievement_oliveirinha_da_serra = "CgkIgaaC3_wWEAIQAg"; // <GPGSID>
+
 }
 

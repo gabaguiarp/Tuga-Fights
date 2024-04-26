@@ -456,6 +456,14 @@ PrefabInstance:
       propertyPath: m_text
       value: "Cr\xE9ditos"
       objectReference: {fileID: 0}
+    - target: {fileID: 6331777302134223964, guid: add4e8b63ec145b418a98af2cefc5243, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 25273903571054592
+      objectReference: {fileID: 0}
+    - target: {fileID: 6331777302134223964, guid: add4e8b63ec145b418a98af2cefc5243, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:f790506eb5e24e841b2aca0d7260eb30
+      objectReference: {fileID: 0}
     - target: {fileID: 6331777303123773748, guid: add4e8b63ec145b418a98af2cefc5243, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1253,6 +1261,7 @@ GameObject:
   m_Component:
   - component: {fileID: 458801672}
   - component: {fileID: 458801674}
+  - component: {fileID: 458801675}
   - component: {fileID: 458801673}
   m_Layer: 5
   m_Name: GameLogo
@@ -1273,12 +1282,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 686078380}
+  m_Father: {fileID: 660199854}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 680, y: 125}
+  m_SizeDelta: {x: 700, y: 130}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &458801673
 MonoBehaviour:
@@ -1318,6 +1327,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458801671}
   m_CullTransparentMesh: 1
+--- !u!114 &458801675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458801671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 504078709168aef46b4c6f593b8ce8d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rect: {fileID: 458801672}
+  _triggerOnStart: 1
+  _targetAnchorYPosition: -30
+  _duration: 2
+  _ease: 4
 --- !u!1 &551854564
 GameObject:
   m_ObjectHideFlags: 0
@@ -1739,6 +1765,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1837949185}
+  - {fileID: 458801672}
   - {fileID: 1441946061}
   - {fileID: 90694538}
   m_Father: {fileID: 1677512002}
@@ -2014,6 +2041,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Sair
       objectReference: {fileID: 0}
+    - target: {fileID: 6331777302134223964, guid: add4e8b63ec145b418a98af2cefc5243, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 8599573248389120
+      objectReference: {fileID: 0}
+    - target: {fileID: 6331777302134223964, guid: add4e8b63ec145b418a98af2cefc5243, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:f790506eb5e24e841b2aca0d7260eb30
+      objectReference: {fileID: 0}
     - target: {fileID: 6331777303123773748, guid: add4e8b63ec145b418a98af2cefc5243, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2079,7 +2114,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1528570731}
-  - {fileID: 458801672}
   m_Father: {fileID: 1677512002}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4418,6 +4452,14 @@ PrefabInstance:
     - target: {fileID: 6331777302134223963, guid: add4e8b63ec145b418a98af2cefc5243, type: 3}
       propertyPath: m_text
       value: "Op\xE7\xF5es"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6331777302134223964, guid: add4e8b63ec145b418a98af2cefc5243, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 8599526582562816
+      objectReference: {fileID: 0}
+    - target: {fileID: 6331777302134223964, guid: add4e8b63ec145b418a98af2cefc5243, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:f790506eb5e24e841b2aca0d7260eb30
       objectReference: {fileID: 0}
     - target: {fileID: 6331777303123773748, guid: add4e8b63ec145b418a98af2cefc5243, type: 3}
       propertyPath: m_Sprite
@@ -7524,6 +7566,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1847798524}
     m_Modifications:
+    - target: {fileID: 5389044957432354482, guid: 0a49cd0cbcf094e4a84d9e3d7a59161b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d1f4c5209a60ce54d8efa7bc245fdbe7, type: 3}
     - target: {fileID: 5389044958890512772, guid: 0a49cd0cbcf094e4a84d9e3d7a59161b, type: 3}
       propertyPath: m_Name
       value: PartnerBtn (2)
@@ -9559,6 +9605,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Modo Livre
       objectReference: {fileID: 0}
+    - target: {fileID: 6331777302134223964, guid: add4e8b63ec145b418a98af2cefc5243, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 8597550331375616
+      objectReference: {fileID: 0}
+    - target: {fileID: 6331777302134223964, guid: add4e8b63ec145b418a98af2cefc5243, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:f790506eb5e24e841b2aca0d7260eb30
+      objectReference: {fileID: 0}
     - target: {fileID: 6331777303123773748, guid: add4e8b63ec145b418a98af2cefc5243, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -9744,6 +9798,14 @@ PrefabInstance:
     - target: {fileID: 6331777302134223963, guid: add4e8b63ec145b418a98af2cefc5243, type: 3}
       propertyPath: m_text
       value: Como Jogar
+      objectReference: {fileID: 0}
+    - target: {fileID: 6331777302134223964, guid: add4e8b63ec145b418a98af2cefc5243, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 20289269833707520
+      objectReference: {fileID: 0}
+    - target: {fileID: 6331777302134223964, guid: add4e8b63ec145b418a98af2cefc5243, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:f790506eb5e24e841b2aca0d7260eb30
       objectReference: {fileID: 0}
     - target: {fileID: 6331777303123773748, guid: add4e8b63ec145b418a98af2cefc5243, type: 3}
       propertyPath: m_Sprite
@@ -10660,7 +10722,7 @@ PrefabInstance:
     - target: {fileID: 5389044957432354482, guid: 0a49cd0cbcf094e4a84d9e3d7a59161b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: b33659978d74c4145a69c2525961e083, type: 3}
+      objectReference: {fileID: 21300000, guid: d1a00c6c45ece1e43a4331ccb2d5acd9, type: 3}
     - target: {fileID: 5389044958890512772, guid: 0a49cd0cbcf094e4a84d9e3d7a59161b, type: 3}
       propertyPath: m_Name
       value: PartnerBtn
@@ -11053,6 +11115,14 @@ PrefabInstance:
     - target: {fileID: 6331777302134223963, guid: add4e8b63ec145b418a98af2cefc5243, type: 3}
       propertyPath: m_text
       value: Batalha
+      objectReference: {fileID: 0}
+    - target: {fileID: 6331777302134223964, guid: add4e8b63ec145b418a98af2cefc5243, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 8597496887554048
+      objectReference: {fileID: 0}
+    - target: {fileID: 6331777302134223964, guid: add4e8b63ec145b418a98af2cefc5243, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:f790506eb5e24e841b2aca0d7260eb30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

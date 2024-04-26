@@ -29,7 +29,9 @@ namespace MemeFight.Services
         QUESTLINE_COMPLETE,
         BATATOON_MATCH,
         BATATINHA_WINS,
-        COMPANHIA_WINS
+        COMPANHIA_WINS,
+        HERMAN_WINS,
+        LILI_WINS
     }
 
     public class Achievements
@@ -184,6 +186,10 @@ namespace MemeFight.Services
                     return GPGSIds.achievement_chama_o_batatinha;
                 case Achievement.COMPANHIA_WINS:
                     return GPGSIds.achievement_convida_o_companhia;
+                case Achievement.HERMAN_WINS:
+                    return GPGSIds.achievement_no_havia_necessidade;
+                case Achievement.LILI_WINS:
+                    return GPGSIds.achievement_no_me_chamem_maria_alice;
 
                 default:
                     Debug.LogWarningFormat("Achievement {0} does not have a matching ID!", achievement);
