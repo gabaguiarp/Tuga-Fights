@@ -11,7 +11,7 @@ namespace MemeFight
         [SerializeField] float _duration = 0.5f;
         [SerializeField] Ease _ease = Ease.Unset;
 
-        float _startAnchorPosY;
+        Vector2 _startAnchorPos;
         bool _isAnimating = false;
 
         void Reset()
@@ -22,7 +22,7 @@ namespace MemeFight
 
         void Start()
         {
-            _startAnchorPosY = _rect.anchoredPosition.y;
+            _startAnchorPos = _rect.anchoredPosition;
 
             if (_triggerOnStart)
                 TriggerAnimation();
@@ -52,11 +52,7 @@ namespace MemeFight
             _rect.DOKill();
 
             if (reset)
-            {
-                Vector2 anchoredPos = _rect.anchoredPosition;
-                anchoredPos.y = _startAnchorPosY;
-                _rect.anchoredPosition = anchoredPos;
-            }
+                _rect.anchoredPosition = _startAnchorPos;
 
             _isAnimating = false;
         }

@@ -24,8 +24,8 @@ namespace MemeFight
 
                 case RewardID.BONUS_FIGHTERS_HERMAN_LILI:
                     ResourcesManager.PersistentData.AddFighterBundle(FightersBundleID.HERMAN_LILI);
-                    Achievements.Unlock(Achievement.HERMAN_WINS);
-                    Achievements.Unlock(Achievement.LILI_WINS);
+                    Achievements.Reveal(Achievement.HERMAN_WINS);
+                    Achievements.Reveal(Achievement.LILI_WINS);
                     break;
             }
         }

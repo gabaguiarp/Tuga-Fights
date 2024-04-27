@@ -36,16 +36,32 @@ namespace MemeFight.Services
 
     public class Achievements
     {
+        /// <summary>
+        /// Unlocks the given <paramref name="achievement"/><br></br>
+        /// This will be ignored if an achievement marked as "Incremental" in the Google Play Console
+        /// is passed, since it is only possible to unlock an incremental achievement by making its
+        /// count reach the "steps required" amount.
+        /// </summary>
+        /// <param name="achievement"></param>
         public static void Unlock(Achievement achievement)
         {
             UnlockAchievementInternal(GetAchievementID(achievement));
         }
 
+        /// <summary>
+        /// Increments the given <paramref name="achievement"/>'s count by <paramref name="amount"/>.
+        /// This only applies to achievements marked as "Incremental" in the Google Play Console.<br></br>
+        /// Note that, once the count reaches the "steps required" amount, the achievement will be
+        /// automatically unlocked.
+        /// </summary>
         public static void Increment(Achievement achievement, int amount)
         {
             IncrementAchievementInternal(GetAchievementID(achievement), amount);
         }
 
+        /// <summary>
+        /// Reveals a previously hidden achievement.
+        /// </summary>
         public static void Reveal(Achievement achievement)
         {
             RevealAchievementInternal(GetAchievementID(achievement));
