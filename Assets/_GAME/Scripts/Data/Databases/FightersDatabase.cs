@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Localization;
 
 namespace MemeFight
 {
@@ -11,6 +12,10 @@ namespace MemeFight
     {
         /// <summary>Contains references to the fighters, separated by team.</summary>
         public Dictionary<Team, List<FighterProfileSO>> Roster { get; private set; }
+        /// <summary>
+        /// Pairs all of the locked fighter profiles with their respective unlock message.
+        /// </summary>
+        public Dictionary<FighterProfileSO, LocalizedString> LockedFighters { get; private set; }
 
         Dictionary<Team, TeamDataSO> _teamsIndexer;
 
@@ -21,19 +26,37 @@ namespace MemeFight
 
         void Init(FightersRosterSO roster, PersistentDataSO persistentData)
         {
-            // Register main fighters
             Roster = new Dictionary<Team, List<FighterProfileSO>>();
+            LockedFighters = new Dictionary<FighterProfileSO, LocalizedString>();
+
+            // Register main fighters
             roster.Fighters.ForEach(f => RegisterFighter(f));
 
             // Register bonus fighters
-            foreach (FightersBundleID id in persistentData.FighterBundles)
+            foreach (var bundle in roster.BonusFighters)
             {
-                if (roster.ContainsBonusID(id))
+                bool isBundleUnlocked = persistentData.ContainsBundle(bundle.ID);
+                var fighters = roster.GetBonusFighters(bundle.ID);
+
+                fighters.ForEach(f =>
                 {
-                    var fighters = roster.GetBonusFighters(id);
-                    fighters.ForEach(f => RegisterFighter(f));
-                }
+                    RegisterFighter(f);
+
+                    // Check if bonus fighter is unlocked
+                    if (!isBundleUnlocked)
+                        LockedFighters.Add(f, bundle.UnlockMessageString);
+                });
             }
+
+            // PREVIOUS METHOD (WITHOUT LOCKED FIGHTERS LIST)
+            //foreach (var bundle in roster.BonusFighters)
+            //{
+            //    if (persistentData.ContainsBundle(bundle.ID))
+            //    {
+            //        var fighters = roster.GetBonusFighters(bundle.ID);
+            //        fighters.ForEach(f => RegisterFighter(f));
+            //    }
+            //}
 
             // Populate the teams indexer with the data containers for each team
             _teamsIndexer = new Dictionary<Team, TeamDataSO>();
@@ -90,7 +113,44 @@ namespace MemeFight
             return Roster[team][randomIndex];
         }
 
-        public int GetTotalFightersForTeam(Team team) => Roster[team].Count;
+        public int GetTotalFightersForTeam(Team team, bool onlyAvailable = false)
+        {
+            if (onlyAvailable)
+            {
+                int totalFighters = 0;
+                foreach (var fighter in Roster[team])
+                {
+                    if (!LockedFighters.ContainsKey(fighter))
+                        totalFighters++;
+                }
+
+                return totalFighters;
+            }
+
+
+            return Roster[team].Count;
+        }
+
+        /// <summary>
+        /// Returns an array with all the fighter indexes that correspond to an unlocked fighter
+        /// of the provided <paramref name="team"/>.<br></br>
+        /// Note that locked fighters will not be considered.
+        /// </summary>
+        public int[] GetAvailableFighterIndexesForTeam(Team team)
+        {
+            List<int> results = new List<int>();
+
+            for (int i = 0; i < Roster[team].Count; i++)
+            {
+                if (!LockedFighters.ContainsKey(Roster[team][i]))
+                {
+                    int fighterIndex = i;
+                    results.Add(fighterIndex);
+                }
+            }
+
+            return results.ToArray();
+        }
 
         /// <summary>
         /// Returns the team that acts as an opponent of <paramref name="myTeam"/>.
@@ -103,6 +163,7 @@ namespace MemeFight
 
     public enum FightersBundleID
     {
-        BATATOON
+        BATATOON,
+        HERMAN_LILI,
     }
 }

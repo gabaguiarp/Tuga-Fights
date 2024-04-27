@@ -20,6 +20,8 @@ namespace MemeFight.Menus
         [SerializeField, ReadOnly] bool _hasCheckedQuests = false;
 
         bool _isWaitingForQuestChecking = false;
+        bool _isWaitingForBonusRewardsChecking = false;
+
         InputManager _inputManager;
 
         protected override void Awake()
@@ -65,7 +67,7 @@ namespace MemeFight.Menus
             }
             else
             {
-                EnableInput();
+                OnAfterQuestChecking();
             }
 
             IEnumerator CheckQuestsWithDelay()
@@ -95,10 +97,53 @@ namespace MemeFight.Menus
 
                 yield return CoroutineUtils.GetWaitRealtime(0.5f);
 
-                EnableInput();
                 _hasCheckedQuests = true;
-
                 _isWaitingForQuestChecking = false;
+
+                OnAfterQuestChecking();
+            }
+        }
+
+        void HandleBonusRewardsChecking()
+        {
+            if (!_isWaitingForBonusRewardsChecking)
+                StartCoroutine(WaitForBonusRewardsChecking());
+
+            IEnumerator WaitForBonusRewardsChecking()
+            {
+                _isWaitingForBonusRewardsChecking = true;
+
+                while (_questsChecker.IsGettingBonusRewards)
+                {
+                    yield return null;
+                }
+
+                EnableInput();
+                _isWaitingForBonusRewardsChecking = false;
+            }
+        }
+
+        void OnAfterQuestChecking()
+        {
+            if (_questsChecker.IsGettingRewardForCompletingQuestline)
+            {
+                EnableInput();
+                return;
+            }
+
+            // NOTE: After checking for quest completion on the current questline, if all
+            // quests were complete for the first time, we avoid checking for bonus rewards,
+            // so we don't get overlapping popups.
+            // Therefore, bonus rewards should be checked the next time the player comes back
+            // to the Main Menu.
+
+            if (_questsChecker.CheckBonusRewards())
+            {
+                HandleBonusRewardsChecking();
+            }
+            else
+            {
+                EnableInput();
             }
         }
 

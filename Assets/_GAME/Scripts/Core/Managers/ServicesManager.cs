@@ -266,6 +266,14 @@ namespace MemeFight.Services
                 case StatID.TOY_WIN:
                     Achievements.Increment(Achievement.TOY_WINS, amount);
                     break;
+
+                case StatID.HERMAN_WIN:
+                    Achievements.Increment(Achievement.HERMAN_WINS, amount);
+                    break;
+
+                case StatID.LILI_WIN:
+                    Achievements.Increment(Achievement.LILI_WINS, amount);
+                    break;
             }
         }
         #endregion

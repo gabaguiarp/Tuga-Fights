@@ -1,5 +1,7 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using FighterUnlockStateInfo = MemeFight.UI.FighterDisplayData.FighterUnlockStateInfo;
 
 namespace MemeFight.UI
 {
@@ -78,6 +80,8 @@ namespace MemeFight.UI
             _inputManager = InputManager.Instance;
             _sceneLoader = SceneLoader.Instance;
 
+            ResourcesManager.OnDatabasesRefreshed += InitializeDisplays;
+
             InitializeDisplays();
         }
 
@@ -87,12 +91,39 @@ namespace MemeFight.UI
 
             InputManager.OnPlayerJoined -= HandlePlayerJoined;
             InputManager.OnPlayerLeft -= HandlePlayerLeft;
+
+            ResourcesManager.OnDatabasesRefreshed -= InitializeDisplays;
         }
 
         void InitializeDisplays()
         {
-            _teamSelectorScreen.PopulateSlots(ResourcesManager.Fighters.Roster);
-            _fighterSelectorScreen.PopulateSlots(ResourcesManager.Fighters.Roster);
+            Dictionary<Team, List<FighterDisplayData>> rosterData = new Dictionary<Team, List<FighterDisplayData>>();
+            var roster = ResourcesManager.Fighters.Roster;
+
+            foreach (var team in ResourcesManager.Fighters.Roster.Keys)
+            {
+                if (!rosterData.ContainsKey(team))
+                    rosterData.Add(team, new List<FighterDisplayData>());
+
+                roster[team].ForEach(p =>
+                {
+                    if (ResourcesManager.Fighters.LockedFighters.ContainsKey(p))
+                    {
+                        // If the fighter is locked, we need to pass the necessary arguments
+                        // to the FighterDisplayData parameters...
+                        rosterData[team].Add(new FighterDisplayData(p, false, ResourcesManager.Fighters.LockedFighters[p]));
+                    }
+                    else
+                    {
+                        // ...otherwise we just pass the fighter profile, since the remaining
+                        // parameters will be automaticallypopulated with default values
+                        rosterData[team].Add(new FighterDisplayData(p));
+                    }
+                });
+            }
+
+            _teamSelectorScreen.PopulateSlots(rosterData);
+            _fighterSelectorScreen.PopulateSlots(rosterData);
             UpdatePlayerPanels();
         }
         #endregion
@@ -171,16 +202,23 @@ namespace MemeFight.UI
                 Debug.Log("Picking random CPU fighter...");
 
                 // Select a random fighter for the CPU in the background
+                // NOTE: We only consider fighters that have been unlocked by the player,
+                // therefore we request an array of available indexes from the ResourcesManager
                 Team cpuTeam = FightersDatabase.GetOpposingTeam(_persistentData.SelectedTeam);
-                int cpuSelectionIndex = _fighterSelectorScreen.SelectRandomFighterForPlayer(Player.Two);
+                int[] availableIndexes = ResourcesManager.Fighters.GetAvailableFighterIndexesForTeam(cpuTeam);
+                int cpuSelectionIndex = _fighterSelectorScreen.SelectRandomFighterForPlayer(Player.Two, availableIndexes);
 
                 // Generate array for the faked CPU selection cycles and draw a random number for each cycle
                 int[] cycleIndexes = new int[RandomSelectionCycles];
-                int totalFighters = ResourcesManager.Fighters.GetTotalFightersForTeam(cpuTeam);
+                //int totalFighters = ResourcesManager.Fighters.GetTotalFightersForTeam(cpuTeam);
 
+                int randomIndex = 0;
                 for (int i = 0; i < RandomSelectionCycles; i++)
                 {
-                    cycleIndexes[i] = Randomizer.GetRandom(0, totalFighters, true);
+                    randomIndex = Randomizer.GetRandom(0, availableIndexes.Length, true);
+                    cycleIndexes[i] = availableIndexes[randomIndex];
+
+                    //cycleIndexes[i] = Randomizer.GetRandom(0, totalFighters, true);
                 }
 
                 // Animate the displays to reflect the current cycle selection
@@ -236,15 +274,24 @@ namespace MemeFight.UI
             }
         }
 
-        void CommitFighterSelectionForTeam(Team team, int fighterIndex)
+        void CommitFighterSelectionForTeam(Team team, int fighterIndex, FighterUnlockStateInfo unlockState)
         {
             Player player = team == _persistentData.SelectedTeam ? Player.One : Player.Two;
+            _fighterSelectorScreen.SetStartMatchButtonEnabled(unlockState.IsUnlocked);
+
+            if (!unlockState.IsUnlocked)
+            {
+                _fighterSelectorScreen.DisplayUnknownFighterForPlayer(player);
+                _fighterSelectorScreen.DisplayUnlockMessage(unlockState.UnlockMessage);
+                return;
+            }
 
             try
             {
                 FighterProfileSO fighter = ResourcesManager.Fighters.GetFightersForTeam(team)[fighterIndex];
 
                 _fighterSelectorScreen.SetDisplayedFighterForPlayer(player, fighter);
+                _fighterSelectorScreen.HideUnlockMessage();
                 _freeFightMatch.SetFighterForPlayer(player, fighter);
 
                 Debug.Log($"Player {(int)player} has selected {fighter.Name}");

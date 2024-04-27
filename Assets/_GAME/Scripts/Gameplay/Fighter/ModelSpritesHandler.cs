@@ -66,6 +66,11 @@ namespace MemeFight.Characters
                     }
                 }
             }
+
+            Debug.Log("Layers setup applied".ToUpper());
+#if UNITY_EDITOR
+            EditorUtility.SetDirty(this.gameObject);
+#endif
         }
     }
 

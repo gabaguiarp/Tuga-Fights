@@ -4,7 +4,7 @@ namespace MemeFight
 {
     public enum StatID
     {
-        BACALAHU_TEAM_WIN,
+        BACALHAU_TEAM_WIN,
         AZEITE_TEAM_WIN,
         FREE_FIGHT_WIN,
         MATCH_WIN,
@@ -25,7 +25,9 @@ namespace MemeFight
         TERESAGUILHERME_WIN,
         TOY_WIN,
         BATATINHA_WIN,
-        COMPANHIA_WIN
+        COMPANHIA_WIN,
+        HERMAN_WIN,
+        LILI_WIN,
     }
 
     public class Stats

@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Localization.Settings;
@@ -13,7 +14,10 @@ namespace MemeFight
         [SerializeField] CampaignStreamSO _campaignStream;
 
         [Space(10)]
-        [SerializeField] QuestLineSO[] _questLines;
+        [SerializeField] QuestLineSO[] _mainQuestLines;
+
+        [Space(10)]
+        [SerializeField] QuestLineSO[] _bonusQuestLines;
 
         public static FightersDatabase Fighters { get; private set; } = null;
         public static CampaignDatabase CampaignStream { get; private set; } = null;
@@ -23,6 +27,7 @@ namespace MemeFight
 
         public static event UnityAction OnLocalizationInitialized;
         public static event UnityAction OnResourcesLoadingComplete;
+        public static event UnityAction OnDatabasesRefreshed;
 
         #region Getters
         public static PersistentDataSO PersistentData
@@ -43,7 +48,18 @@ namespace MemeFight
                 if (Instance == null)
                     return null;
 
-                return Instance._questLines[PersistentData.ActiveQuestlineIndex];
+                return Instance._mainQuestLines[PersistentData.ActiveQuestlineIndex];
+            }
+        }
+
+        public static IReadOnlyList<QuestLineSO> BonusQuestLines
+        {
+            get
+            {
+                if (Instance == null)
+                    return null;
+
+                return Instance._bonusQuestLines;
             }
         }
         #endregion
@@ -105,7 +121,10 @@ namespace MemeFight
                 return;
             }
 
+            Debug.Log("Refreshing databases...");
+
             Instance.InitializeDatabases();
+            OnDatabasesRefreshed?.Invoke();
         }
 
         protected override void OnDestroy()

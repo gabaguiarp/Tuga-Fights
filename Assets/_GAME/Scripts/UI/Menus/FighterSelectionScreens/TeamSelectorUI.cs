@@ -20,11 +20,11 @@ namespace MemeFight.UI
             _backButton.Click();
         }
 
-        public void PopulateSlots(Dictionary<Team, List<FighterProfileSO>> fighters)
+        public void PopulateSlots(Dictionary<Team, List<FighterDisplayData>> fightersDisplayData)
         {
             _rosterPanel.ClearSlots();
 
-            foreach (var kvp in fighters)
+            foreach (var kvp in fightersDisplayData)
             {
                 _rosterPanel.PopulateSlotsForTeam(kvp.Key, kvp.Value);
             }

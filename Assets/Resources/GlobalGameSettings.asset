@@ -22,6 +22,7 @@ MonoBehaviour:
   _saveData: 1
   _analyticsEnabled: 1
   _crashlyticsEnabled: 1
+  _cloudMessagingEnabled: 1
   _contactURL: mailto:playatplayhouse@gmail.com
   _privacyPolicyURLs:
     <Portuguese>k__BackingField: https://sites.google.com/view/tugafights/politica-de-privacidade

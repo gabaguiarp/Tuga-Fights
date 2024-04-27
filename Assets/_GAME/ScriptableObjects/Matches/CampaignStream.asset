@@ -23,5 +23,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e62a254abfbfdc94d9817cc6e1796607, type: 2}
   - {fileID: 11400000, guid: 8aef21ae54c00044c99d1e0b407c3bbd, type: 2}
   _bonusMatches:
+  - RequiredBundle: 1
+    Match: {fileID: 11400000, guid: df21a520f5c0c7f4cabcd8c526168337, type: 2}
   - RequiredBundle: 0
     Match: {fileID: 11400000, guid: 9cdb5c69a48117447805bbcb5fe5b422, type: 2}

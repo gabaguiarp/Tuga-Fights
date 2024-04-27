@@ -1,16 +1,18 @@
+using MemeFight.Services;
 using UnityEngine;
 
 namespace MemeFight
 {
     public enum RewardID
     {
-        BONUS_FIGHTERS_BATATOON
+        BONUS_FIGHTERS_BATATOON,
+        BONUS_FIGHTERS_HERMAN_LILI,
     }
 
     public class RewardSystem
     {
         /// <summary>
-        /// Registers the reward immediately in the <see cref=" ResourcesManager"/>.
+        /// Registers the reward immediately in the <see cref="ResourcesManager"/>.
         /// </summary>
         public static void ClaimReward(RewardID id)
         {
@@ -18,6 +20,12 @@ namespace MemeFight
             {
                 case RewardID.BONUS_FIGHTERS_BATATOON:
                     ResourcesManager.PersistentData.AddFighterBundle(FightersBundleID.BATATOON);
+                    break;
+
+                case RewardID.BONUS_FIGHTERS_HERMAN_LILI:
+                    ResourcesManager.PersistentData.AddFighterBundle(FightersBundleID.HERMAN_LILI);
+                    Achievements.Reveal(Achievement.HERMAN_WINS);
+                    Achievements.Reveal(Achievement.LILI_WINS);
                     break;
             }
         }

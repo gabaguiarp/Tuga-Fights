@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _description: Contains the configuration for a custom Free Fight match. These values
     should be set through a dedicated menu before starting the actual match.
-  _fighterOne: {fileID: 11400000, guid: 2b8511d86323f0845a6b4e7ee848d13d, type: 2}
-  _fighterTwo: {fileID: 11400000, guid: c00c1a95fe6a29742b296cf03854e006, type: 2}
+  _fighterOne: {fileID: 11400000, guid: f4cf6c0b5c14d2e408811dcd1ff987b8, type: 2}
+  _fighterTwo: {fileID: 11400000, guid: ecc3cae28842ad54caf7ed9396684120, type: 2}

@@ -12,7 +12,8 @@ namespace MemeFight.UI
 
         protected override void SelectPreviousIfEnabled()
         {
-            if (!gameObject.activeInHierarchy || _defaultSelection == null) return;
+            if (!gameObject.activeInHierarchy || _defaultSelection == null)
+                return;
 
             if (InputManager.Instance != null)
             {

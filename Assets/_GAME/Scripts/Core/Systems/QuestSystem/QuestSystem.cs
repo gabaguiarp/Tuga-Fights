@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization;
 
@@ -86,6 +87,31 @@ namespace MemeFight
                 return 0;
             
             return (float)completedAmount / (float)totalAmount;
+        }
+
+        public static List<RewardID> GetUnlockedBonusRewards()
+        {
+            List<RewardID> unlockedRewards = new List<RewardID>();
+
+            foreach (var questline in ResourcesManager.BonusQuestLines)
+            {
+                if (ResourcesManager.PersistentData.WasRewardUnlocked(questline.Reward))
+                    continue;
+
+                int completedQuests = 0;
+                foreach (var item in questline.items)
+                {
+                    if (GetQuestValue(item) >= item.AmountRequired)
+                        completedQuests++;
+                }
+
+                if (completedQuests >= questline.items.Length)
+                {
+                    unlockedRewards.Add(questline.Reward);
+                }
+            }
+
+            return unlockedRewards;
         }
     }
 }

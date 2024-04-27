@@ -33,7 +33,32 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f4f91e9111dd1e64b908aefa9f5b1a24, type: 2}
   - {fileID: 11400000, guid: a7c7c4bdeeb45fc4192e4786429beb0b, type: 2}
   _bonusFighters:
+  - <ID>k__BackingField: 1
+    <UnlockMessageString>k__BackingField:
+      m_TableReference:
+        m_TableCollectionName: GUID:767f597879b62e04696bc56043a85132
+      m_TableEntryReference:
+        m_KeyId: 8068837376
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    _fighters:
+    - {fileID: 11400000, guid: f4cf6c0b5c14d2e408811dcd1ff987b8, type: 2}
+    - {fileID: 11400000, guid: d607f5b7cd05df447b83b181b11263dc, type: 2}
   - <ID>k__BackingField: 0
+    <UnlockMessageString>k__BackingField:
+      m_TableReference:
+        m_TableCollectionName: GUID:767f597879b62e04696bc56043a85132
+      m_TableEntryReference:
+        m_KeyId: 20202958848
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
     _fighters:
     - {fileID: 11400000, guid: 640d8ac07c0e55a4a91b5bd73e31dd6e, type: 2}
     - {fileID: 11400000, guid: ecc3cae28842ad54caf7ed9396684120, type: 2}
+  references:
+    version: 2
+    RefIds: []

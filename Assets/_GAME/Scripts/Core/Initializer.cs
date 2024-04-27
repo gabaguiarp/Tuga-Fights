@@ -39,7 +39,7 @@ namespace MemeFight
             }
             else
             {
-                Debug.LogWarning("No ServicesManager instance found! Services will not be initialized.");
+                Debug.LogWarning("No ServicesManager instance found! Services will not be initialised.");
             }
 
             // Load start scene
