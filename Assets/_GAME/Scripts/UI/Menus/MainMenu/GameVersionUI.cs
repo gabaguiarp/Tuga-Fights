@@ -6,6 +6,7 @@ namespace MemeFight
     public class GameVersionUI : MonoBehaviour
     {
         [SerializeField] bool _updateInEditMode = true;
+        [SerializeField] string _prefix;
         [SerializeField] TextMeshProUGUI _versionText;
 
         void Reset()
@@ -29,7 +30,7 @@ namespace MemeFight
         void UpdateVersionDisplay()
         {
             if (_versionText != null)
-                _versionText.SetText(Application.version);
+                _versionText.SetText(_prefix + Application.version);
         }
     }
 }
