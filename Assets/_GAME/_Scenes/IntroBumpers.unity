@@ -169,7 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sequenceUI: {fileID: 1232576433}
   _bumpers:
-  - name: Disclaimer
+  - name: Splash
     content: {fileID: 477123647}
     displayTime: 8
     fadeIn: 0
@@ -462,7 +462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 477123648}
   m_Layer: 5
-  m_Name: DisclaimerBumper
+  m_Name: SplashBumper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -490,6 +490,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &652698423 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2997768248168802303, guid: ff3c23727ed4d3f4a9e2101fa9a5fbde, type: 3}
+  m_PrefabInstance: {fileID: 1319637595}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &759467223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1016,7 +1021,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 981694337499506630, guid: ff3c23727ed4d3f4a9e2101fa9a5fbde, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -50
+      value: -40
       objectReference: {fileID: 0}
     - target: {fileID: 981694337499506630, guid: ff3c23727ed4d3f4a9e2101fa9a5fbde, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1040,19 +1045,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 981694337499506630, guid: ff3c23727ed4d3f4a9e2101fa9a5fbde, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 981694337499506630, guid: ff3c23727ed4d3f4a9e2101fa9a5fbde, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 981694337499506630, guid: ff3c23727ed4d3f4a9e2101fa9a5fbde, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 981694337499506630, guid: ff3c23727ed4d3f4a9e2101fa9a5fbde, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 981694337499506630, guid: ff3c23727ed4d3f4a9e2101fa9a5fbde, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1109,13 +1114,32 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2997768248168802303, guid: ff3c23727ed4d3f4a9e2101fa9a5fbde, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1319637597}
   m_SourcePrefab: {fileID: 100100000, guid: ff3c23727ed4d3f4a9e2101fa9a5fbde, type: 3}
 --- !u!224 &1319637596 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 981694337499506630, guid: ff3c23727ed4d3f4a9e2101fa9a5fbde, type: 3}
   m_PrefabInstance: {fileID: 1319637595}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1319637597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652698423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d3b7a6a9aa8524b84ffa907a08c20d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  constainWidth: 1
+  maxWidth: 1920
+  constrainHeight: 1
+  maxHeight: 1080
 --- !u!1 &1895560766
 GameObject:
   m_ObjectHideFlags: 0
