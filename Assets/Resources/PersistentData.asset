@@ -18,20 +18,36 @@ MonoBehaviour:
   _playerData:
     profile:
       selectedTeam: 1
-      questProgress: []
-      unlockedRewards: 
+      questProgress:
+      - ID: CampaignWinBacalhau
+        IsComplete: 1
+      - ID: CampaignWinAzeite
+        IsComplete: 1
+      - ID: FreeFightWins
+        IsComplete: 1
+      unlockedRewards: 0000000001000000
       activeQuestlineIndex: 0
     settings:
       music: 1
       sfx: 1
       cameraNoise: 1
-    stats: []
+    stats:
+    - ID: 0
+      Value: 3
+    - ID: 1
+      Value: 2
+    - ID: 2
+      Value: 11
+    - ID: 3
+      Value: 15
+    - ID: 10
+      Value: 1
   _gameplayStream:
     gameMode: 0
     currentCampaignMatchIndex: 0
     campaignAttemptsRemaining: 0
-    questProgressPercentage: 0
-    fighterBundles: 
+    questProgressPercentage: 1
+    fighterBundles: 0000000001000000
   _analyticsData:
     activeSessionRoundsPlayed: 0
     activeSessionMatchesPlayed: 0
