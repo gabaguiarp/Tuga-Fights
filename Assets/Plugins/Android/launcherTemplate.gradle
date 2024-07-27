@@ -5,9 +5,11 @@ dependencies {
     }
 
 android {
+	namespace "**NAMESPACE**"
     ndkPath "**NDKPATH**"
 
-    compileSdkVersion **APIVERSION**
+    // compileSdkVersion **APIVERSION**
+    compileSdkVersion 33
     buildToolsVersion '**BUILDTOOLS**'
 
     compileOptions {
@@ -17,7 +19,8 @@ android {
 
     defaultConfig {
         minSdkVersion **MINSDKVERSION**
-        targetSdkVersion **TARGETSDKVERSION**
+        // targetSdkVersion **TARGETSDKVERSION**
+        targetSdkVersion 34
         applicationId '**APPLICATIONID**'
         ndk {
             abiFilters **ABIFILTERS**
