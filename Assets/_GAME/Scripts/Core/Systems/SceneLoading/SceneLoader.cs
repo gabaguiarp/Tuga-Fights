@@ -9,7 +9,11 @@ namespace MemeFight
 {
     public class SceneLoader : Singleton<SceneLoader>
     {
+        [Header("Settings")]
         [SerializeField] bool _stopMusicWhenSwitchingScenes = true;
+        [Range(0, 2)]
+        [Tooltip("The minimum amout of time for which the loading screen must be displayed, even if everything is loaded faster.")]
+        [SerializeField] float _minDisplayTime = 1.0f;
 
         [Header("References")]
         [SerializeField] SceneReferenceSO _managersScene;
@@ -82,6 +86,8 @@ namespace MemeFight
             _loadingPct = 0.0f;
             OnLoadingStarted?.Invoke();
 
+            float loadingScreenDisplayStartTime = Time.time;
+
             // Show loading screen
             if (_showLoadingScreen)
             {
@@ -114,6 +120,15 @@ namespace MemeFight
                 _loadingPct = GetOperationsAveragePercentage();
                 _loadingScreen.SetLoadingBarValue(_loadingPct);
                 yield return null;
+            }
+
+            // Check if loading screen has been displayed for the defined minimum time
+            if (_showLoadingScreen)
+            {
+                while (Time.time < loadingScreenDisplayStartTime + _minDisplayTime)
+                {
+                    yield return null;
+                }
             }
 
             // Activate the loaded scene
