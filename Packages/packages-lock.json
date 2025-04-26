@@ -8,41 +8,41 @@
       "hash": "b870d64b5704a764fd03aaccb11f2dbe652b1756"
     },
     "com.google.external-dependency-manager": {
-      "version": "file:../GooglePackages/com.google.external-dependency-manager-1.2.185.tgz",
+      "version": "file:../GooglePackages/com.google.external-dependency-manager-1.2.177.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {}
     },
     "com.google.firebase.analytics": {
-      "version": "file:../GooglePackages/com.google.firebase.analytics-12.8.0.tgz",
+      "version": "file:../GooglePackages/com.google.firebase.analytics-11.9.0.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
-        "com.google.firebase.app": "12.8.0"
+        "com.google.firebase.app": "11.9.0"
       }
     },
     "com.google.firebase.app": {
-      "version": "file:../GooglePackages/com.google.firebase.app-12.8.0.tgz",
+      "version": "file:../GooglePackages/com.google.firebase.app-11.9.0.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
-        "com.google.external-dependency-manager": "1.2.185"
+        "com.google.external-dependency-manager": "1.2.177"
       }
     },
     "com.google.firebase.crashlytics": {
-      "version": "file:../GooglePackages/com.google.firebase.crashlytics-12.8.0.tgz",
+      "version": "file:../GooglePackages/com.google.firebase.crashlytics-11.9.0.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
-        "com.google.firebase.app": "12.8.0"
+        "com.google.firebase.app": "11.9.0"
       }
     },
     "com.google.firebase.messaging": {
-      "version": "file:../GooglePackages/com.google.firebase.messaging-12.8.0.tgz",
+      "version": "file:../GooglePackages/com.google.firebase.messaging-11.9.0.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
-        "com.google.firebase.app": "12.8.0"
+        "com.google.firebase.app": "11.9.0"
       }
     },
     "com.unity.2d.animation": {
