@@ -17,18 +17,13 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 19843734edcf3f44f840773ceb60d342
   m_SerializeEntries:
-  - m_GUID: f790506eb5e24e841b2aca0d7260eb30
-    m_Address: Assets/Localization/Tables/Menus Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 165afe8959e423143af56e643f9878d4
     m_Address: Assets/Localization/Tables/Teams Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5075cd9103a49c34c9fdd35e819ef4a7
-    m_Address: Assets/Localization/Tables/Popups Shared Data.asset
+  - m_GUID: 2132479ae0fa9b649beef5b4ad9511d9
+    m_Address: Assets/Localization/Tables/Tutorial Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -37,8 +32,8 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ac5b56b171c55ca468427e64343a476d
-    m_Address: Assets/Localization/Tables/Quests Shared Data.asset
+  - m_GUID: 5075cd9103a49c34c9fdd35e819ef4a7
+    m_Address: Assets/Localization/Tables/Popups Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -47,8 +42,13 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 2132479ae0fa9b649beef5b4ad9511d9
-    m_Address: Assets/Localization/Tables/Tutorial Shared Data.asset
+  - m_GUID: 767f597879b62e04696bc56043a85132
+    m_Address: Assets/Localization/Tables/Info Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ac5b56b171c55ca468427e64343a476d
+    m_Address: Assets/Localization/Tables/Quests Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -62,8 +62,8 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 767f597879b62e04696bc56043a85132
-    m_Address: Assets/Localization/Tables/Info Shared Data.asset
+  - m_GUID: f790506eb5e24e841b2aca0d7260eb30
+    m_Address: Assets/Localization/Tables/Menus Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
