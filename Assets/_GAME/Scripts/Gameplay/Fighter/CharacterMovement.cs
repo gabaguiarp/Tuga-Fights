@@ -55,7 +55,7 @@ namespace MemeFight.Characters
         public void SetEnabled(bool enabled)
         {
             _rb.bodyType = enabled ? RigidbodyType2D.Dynamic : RigidbodyType2D.Kinematic;
-            _rb.velocity = Vector2.zero;
+            _rb.linearVelocity = Vector2.zero;
             _rb.angularVelocity = 0.0f;
             _movement = Vector2.zero;
             _collider.enabled = enabled;
