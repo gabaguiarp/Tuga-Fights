@@ -13,12 +13,10 @@ MonoBehaviour:
   m_Name: Localization-Locales
   m_EditorClassIdentifier: 
   m_GroupName: Localization-Locales
-  m_Data:
-    m_SerializedData: []
   m_GUID: 2a5ec51e95e3ff149b3a37b33e0e4421
   m_SerializeEntries:
   - m_GUID: 1b086d508ce86f9449f5b30d0806162e
-    m_Address: "Portugu\xEAs"
+    m_Address: Portuguese
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale

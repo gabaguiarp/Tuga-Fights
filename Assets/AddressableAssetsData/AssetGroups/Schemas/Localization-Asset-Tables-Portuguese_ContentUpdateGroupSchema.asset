@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5834b5087d578d24c926ce20cd31e6d6, type: 3}
-  m_Name: "Localization-String-Tables-Portugu\xEAs_ContentUpdateGroupSchema"
+  m_Name: Localization-Asset-Tables-Portuguese_ContentUpdateGroupSchema
   m_EditorClassIdentifier: 
-  m_Group: {fileID: 11400000, guid: a798b8ebcd1f1f6449e15fa4f98c89c8, type: 2}
+  m_Group: {fileID: 11400000, guid: e6b87df67bd9c0e41a1124c914178aaf, type: 2}
   m_StaticContent: 0

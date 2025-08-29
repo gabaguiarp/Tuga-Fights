@@ -15,4 +15,9 @@
       </intent-filter>
     </service>
   </application>
+  <queries>
+    <package android:name="com.google.android.gms" />
+    <package android:name="com.android.vending" />
+    <package android:name="com.google.android.play.games" />
+  </queries>
 </manifest>
