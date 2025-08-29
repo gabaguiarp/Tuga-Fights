@@ -28,3 +28,4 @@ EditorBuildSettings:
     com.unity.input.settings: {fileID: 11400000, guid: cb4c293f596604945b714607a921ef7e, type: 2}
     com.unity.localization.addressable-group-rules: {fileID: 11400000, guid: 5bda1d97604331242adeb7f12daacbe5, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: 36bd00edb97d5764c9e2bf1b24d1a9e7, type: 2}
+  m_UseUCBPForAssetBundles: 0
