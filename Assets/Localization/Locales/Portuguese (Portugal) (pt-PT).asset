@@ -16,9 +16,10 @@ MonoBehaviour:
     m_Code: pt-PT
   m_Metadata:
     m_Items: []
-  m_LocaleName: "Portugu\xEAs"
+  m_LocaleName: Portuguese
   m_CustomFormatCultureCode: 
   m_UseCustomFormatter: 0
   m_SortOrder: 0
   references:
-    version: 1
+    version: 2
+    RefIds: []

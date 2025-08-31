@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: "Localization-Assets-Portugu\xEAs"
   m_EditorClassIdentifier: 
   m_GroupName: "Localization-Assets-Portugu\xEAs"
-  m_Data:
-    m_SerializedData: []
   m_GUID: aadce50d3075db44d81b15de7b63b5a0
   m_SerializeEntries:
   - m_GUID: 1dcbb5214277c67479f8525903f9cad4
@@ -22,6 +20,7 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-pt-PT
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 8f8633f2c1d1d254ebb5667c07730ab5, type: 2}
   m_SchemaSet:
