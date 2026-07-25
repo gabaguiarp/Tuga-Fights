@@ -14,15 +14,15 @@
       "dependencies": {}
     },
     "com.google.firebase.analytics": {
-      "version": "file:../GooglePackages/com.google.firebase.analytics-13.1.0.tgz",
+      "version": "file:../GooglePackages/com.google.firebase.analytics-13.14.0.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
-        "com.google.firebase.app": "13.1.0"
+        "com.google.firebase.app": "13.14.0"
       }
     },
     "com.google.firebase.app": {
-      "version": "file:../GooglePackages/com.google.firebase.app-13.1.0.tgz",
+      "version": "file:../GooglePackages/com.google.firebase.app-13.14.0.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
@@ -30,19 +30,19 @@
       }
     },
     "com.google.firebase.crashlytics": {
-      "version": "file:../GooglePackages/com.google.firebase.crashlytics-13.1.0.tgz",
+      "version": "file:../GooglePackages/com.google.firebase.crashlytics-13.14.0.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
-        "com.google.firebase.app": "13.1.0"
+        "com.google.firebase.app": "13.14.0"
       }
     },
     "com.google.firebase.messaging": {
-      "version": "file:../GooglePackages/com.google.firebase.messaging-13.1.0.tgz",
+      "version": "file:../GooglePackages/com.google.firebase.messaging-13.14.0.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
-        "com.google.firebase.app": "13.1.0"
+        "com.google.firebase.app": "13.14.0"
       }
     },
     "com.unity.2d.animation": {
