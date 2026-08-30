@@ -14,15 +14,15 @@
       "dependencies": {}
     },
     "com.google.firebase.analytics": {
-      "version": "file:../GooglePackages/com.google.firebase.analytics-13.1.0.tgz",
+      "version": "file:../GooglePackages/com.google.firebase.analytics-13.14.0.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
-        "com.google.firebase.app": "13.1.0"
+        "com.google.firebase.app": "13.14.0"
       }
     },
     "com.google.firebase.app": {
-      "version": "file:../GooglePackages/com.google.firebase.app-13.1.0.tgz",
+      "version": "file:../GooglePackages/com.google.firebase.app-13.14.0.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
@@ -30,27 +30,27 @@
       }
     },
     "com.google.firebase.crashlytics": {
-      "version": "file:../GooglePackages/com.google.firebase.crashlytics-13.1.0.tgz",
+      "version": "file:../GooglePackages/com.google.firebase.crashlytics-13.14.0.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
-        "com.google.firebase.app": "13.1.0"
+        "com.google.firebase.app": "13.14.0"
       }
     },
     "com.google.firebase.messaging": {
-      "version": "file:../GooglePackages/com.google.firebase.messaging-13.1.0.tgz",
+      "version": "file:../GooglePackages/com.google.firebase.messaging-13.14.0.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
-        "com.google.firebase.app": "13.1.0"
+        "com.google.firebase.app": "13.14.0"
       }
     },
     "com.unity.2d.animation": {
-      "version": "13.0.5",
+      "version": "13.0.6",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.2d.common": "12.0.3",
+        "com.unity.2d.common": "12.0.4",
         "com.unity.2d.sprite": "1.0.0",
         "com.unity.collections": "2.4.3",
         "com.unity.modules.animation": "1.0.0",
@@ -59,7 +59,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.2d.common": {
-      "version": "12.0.3",
+      "version": "12.0.4",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -197,7 +197,7 @@
       "dependencies": {}
     },
     "com.unity.ide.visualstudio": {
-      "version": "2.0.27",
+      "version": "2.0.28",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -277,7 +277,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.recorder": {
-      "version": "5.1.6",
+      "version": "5.1.7",
       "depth": 0,
       "source": "registry",
       "dependencies": {
