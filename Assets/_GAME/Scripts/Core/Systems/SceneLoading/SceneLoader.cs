@@ -86,7 +86,7 @@ namespace MemeFight
             _loadingPct = 0.0f;
             OnLoadingStarted?.Invoke();
 
-            float loadingScreenDisplayStartTime = Time.time;
+            float loadingScreenMinHidingTime = Time.time + _minDisplayTime;
 
             // Show loading screen
             if (_showLoadingScreen)
@@ -125,7 +125,7 @@ namespace MemeFight
             // Check if loading screen has been displayed for the defined minimum time
             if (_showLoadingScreen)
             {
-                while (Time.time < loadingScreenDisplayStartTime + _minDisplayTime)
+                while (Time.time < loadingScreenMinHidingTime)
                 {
                     yield return null;
                 }
